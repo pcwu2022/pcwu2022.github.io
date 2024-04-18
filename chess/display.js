@@ -1,6 +1,7 @@
 /********* board *********/
 background(200,200,20);
 strokeWeight(4);
+stroke(0,0,0);
 fill(180,150,80);
 rect(0,0,400,500);
 rect(38,58,316,358);

@@ -14,14 +14,14 @@
         <div id = "mainText" align = "left"></div>
 
         <script>
-            let ipt = document.getElementById("ipt");
+            let iptGlobal = document.getElementById("ipt");
             let mainText = document.getElementById("mainText");
 
             if ( window.outerWidth > 700 ){
                 document.body.style.paddingLeft = (window.outerWidth - 700)/2 + "px";
                 document.body.style.paddingRight = (window.outerWidth - 700)/2 + "px";
             } else {
-                ipt.style.width = window.outerWidth - 120 + "px";
+                iptGlobal.style.width = window.outerWidth - 120 + "px";
                 
             }
         </script>

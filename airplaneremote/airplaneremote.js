@@ -113,7 +113,7 @@ let val;
 let dbg0 = rect(0,0,0,0);
 let dbg1 = rect(0,20,0,0);
 let dbg2 = rect(0,40,0,0);
-let tilt = function(){
+let tiltFunc = function(){
     document.body.innerHTML = "";
     noFill();
     noStroke();
@@ -145,4 +145,4 @@ let tilt = function(){
     });
 }
 
-script.send();
+// script.send();

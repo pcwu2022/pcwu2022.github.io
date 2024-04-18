@@ -30,6 +30,7 @@ let alphaList = [Infinity];
 let debug_tree = {"num":0,"next":{}};
 let debug_el = debug_tree.next;
 let final_leaf_num = 0;
+let moveList = [];
 
 let depthFirst = function(minMax, depth){
     if (depth > depthLimit){
@@ -39,7 +40,7 @@ let depthFirst = function(minMax, depth){
     if (depth%2 === 1){
         alphaList[depth] = 0-Infinity;
         if (depth === 1){
-            let moveList = [];    
+            moveList = [];    
         }
         let maxList = [];
         //sense black
@@ -203,9 +204,9 @@ let computer = function(){
     debug_tree = {"num":0,"next":{}};
     debug_el = debug_tree.next;
     final_leaf_num = 0;
-    console.log("comp!");
+    // console.log("comp!");
     alphaList = [Infinity];
     depthFirst(0, 1);
-    console.log(debug_tree);
-    console.log(final_leaf_num);
+    // console.log(debug_tree);
+    // console.log(final_leaf_num);
 };

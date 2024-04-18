@@ -1,5 +1,5 @@
 let graphArr = [50, 50, 850, 350];
-let V = 5;
+let V = 100;
 let nodeArr = [];
 nodeArr.fill()
 
@@ -68,8 +68,11 @@ function main(){
 //program
 let Wave1 = new Wave(50, 0.2, -0.25, 0);
 //let Wave2 = new Wave(50, 0.2, -0.25, 1);
-let mainItv = window.setInterval(main, 1/V);
-button.addEventListener("click", function(){
+let mainItv = window.setInterval(main, 1000/V);
+
+const change = () => {
     time = 0;
     Wave1 = new Wave(document.getElementById("Ymax").value, document.getElementById("K").value, document.getElementById("Omega").value, document.getElementById("Phi").value);
-})
+}
+
+button.addEventListener("click", change);
