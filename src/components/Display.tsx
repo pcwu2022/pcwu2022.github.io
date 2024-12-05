@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Display = (props: {
+  id: string,
   title: string,
   supporting: Array<string>,
   images: Array<[string, string]>,
@@ -8,7 +9,7 @@ const Display = (props: {
 }) => {
   return (
     <div>
-      <div className='inline-block w-1/3 xl:w-2/12 align-top'>
+      <div className='inline-block w-1/3 xl:w-2/12 align-top' id={props.id}>
         {props.images.map((el) => <>
           <img src={el[0]} alt={el[1]} className='w-full'/>
         </>)}

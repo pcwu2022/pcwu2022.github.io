@@ -10,6 +10,7 @@ const Research = () => {
         <div className='p-8'>
           <div className='text-2xl font-bold mb-4'>Research</div>
           <Display 
+            id="analog"
             title="SAR ADC, PLL, and SerDes Design"
             supporting={[
               "High-Speed Circuit Lab, Fall, 2024, In progress", 
@@ -27,6 +28,7 @@ const Research = () => {
             </>
           </Display>
           <Display 
+            id="mos2"
             title="Separation and Transfer of Monolayer Molybdenum Disulfide"
             supporting={[
               "National Synchrotron Radiation Research Center, Spring, 2021", 

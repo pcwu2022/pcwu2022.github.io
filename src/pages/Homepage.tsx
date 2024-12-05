@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Links from '../components/Links'
+import InnerLink from '../components/InnerLink'
 
 const Homepage = () => {
   return (
@@ -49,7 +50,7 @@ const Homepage = () => {
         </div>
         <div className='inline-block align-top w-2/3 p-8'>
           <div className='text-2xl font-bold mb-4'>About Me</div>
-          <div className='mb-4' id='introduction'>I'm Po-Chun, a junior undergraduate at National Taiwan University, majoring in electrical engineering. My lab research mainly focuses on analog and mixed-signal IC design. Still, my interests also include computer architecture, microwave circuits, algorithms, communication systems, bioengineering, and programming in general.</div>
+          <div className='mb-4' id='introduction'>I'm Po-Chun, a junior undergraduate at National Taiwan University, majoring in electrical engineering. My lab research mainly focuses on <InnerLink to="/research#analog">analog and mixed-signal IC design</InnerLink>. Still, my interests also include computer architecture, microwave circuits, algorithms, communication systems, bioengineering, and programming in general.</div>
           <div className='mb-4' id='entrepreneur'><b>I'm an Entrepreneur.</b> I see opportunities, enlighten others with my vision, and execute them passionately. I founded the NTU Learning Optimization Club in my sophomore year, and the Chinese Chess Association in high school. I'm the initiator of a two-year-long project to create an online replica of the NTUEE Makerspace. I'm also the current CEO of NTU Pair, an online dating app startup, and a team leader in the creative and entrepreneurial program.</div>
           <div className='mb-4' id='leader'><b>I'm a Leader.</b> I value cooperation, teamwork, and culture. I  planned and executed over 25 lectures and activities throughout my one year of service in the student association. Additionally, I mentored my freshmen groupmates, equipping them with the skills necessary to excel in their future leadership roles. I've also led a team of 20 people to teach high-school students maker skills in the NTUEE summer camp.</div>
           <div className='mb-4' id='maker'><b>I'm a Maker.</b> I see problems, use my knowledge as a toolbox, and solve them. For hardware, I designed and built a programmable glowing bike, the props for the NTUEE Light Dance, and an AR device for motorists to navigate around the city, for which we won the best maker award in the annual MakeNTU competition. For software, I created a random restaurant selector for NTU students, some JavaScript solitaire games, and an online hospital simulation system for SLEK, a medical student organization.</div>
