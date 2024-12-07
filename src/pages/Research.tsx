@@ -14,12 +14,13 @@ const Research = () => {
             title="SAR ADC, PLL, and SerDes Design"
             supporting={[
               "High-Speed Circuit Lab, Fall, 2024, In progress", 
-              "Instructor: Prof. Tai-Cheng Lee, NTU"
+              "Advisor: Prof. Tai-Cheng Lee, NTU"
             ]}
             images={[
-              ["/images/adc1.png", "ADC simulation results"], 
-              ["/images/adc2.png", "ADC simulation results"]
+              ["/images/adc1.png", "ADC capacitor mismatch simulation"], 
+              ["/images/adc2.png", "ADC switching behavior model"]
             ]}
+            links={[]}
           >
             <>
               <div className='mb-4'>My current research topic is on mixed signals, including domain knowledge extension, paper reviews, and behavior model simulation. In the fall semester, I conducted MATLAB simulations on several ADC models based on references from the literature. My simulations include the conventional SAR ADC, a monotonic-switching SAR ADC, a split-capacitor SAR ADC with a variable-window function, a merge-switched capacitor SAR ADC, and a redundant-capacitor SAR ADC. The simulation also includes comparator noise, capacitor mismatch, parasitic capacitance, and power comparison, providing insights into the ADC design philosophies.</div>
@@ -32,12 +33,13 @@ const Research = () => {
             title="Separation and Transfer of Monolayer Molybdenum Disulfide"
             supporting={[
               "National Synchrotron Radiation Research Center, Spring, 2021", 
-              "Instructor: Prof. Chia-Hao Chen, NSRRC"
+              "Advisor: Prof. Chia-Hao Chen, NSRRC"
             ]}
             images={[
-              ["/images/mos23.png", "MoS2 Under Microscope"], 
-              ["/images/mos22.png", "MoS2 Under Raman Spectroscopy"]
+              ["/images/mos23.png", "MoS2 Under Raman Spectroscopy"], 
+              ["/images/mos22.png", "MoS2 Under Microscope"]
             ]}
+            links={[]}
           >
             <>
               <div className='mb-4'>My research in high school is on the separation and transfer of monolayer Molybdenum Disulfide (MoS₂) using decane-dithiol and gold-plated silicon substrate, measured under a Raman spectroscopy microscope. MoS₂ exists as a bulk, or multilayer structure; however, similar to graphene, when a monolayer is separated from the bulk, it exhibits completely different properties. For example, a monolayer MoS₂ is a direct band gap semiconductor used in lasers, LEDs, and photoelectric diodes. However, producing MoS₂ with a thickness of several Angstroms isn’t an easy task. By conventional methods, it requires one week of soaking the MoS₂ in thiol solution, heating the MoS₂ to 773K for hours, and another week to transfer the monolayer MoS₂ onto another silicon substrate. Our research experiments on various parameters that affect the separation and transfer procedures, including exposure to UV light, ultrasonic agitation, heating, and timing.</div>

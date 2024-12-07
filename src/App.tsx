@@ -4,6 +4,7 @@ import './App.css';
 import Homepage from './pages/Homepage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Research from './pages/Research';
+import Projects from './pages/Projects';
 
 
 function App() {
@@ -13,8 +14,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/research' element={<Research />}></Route>
+          <Route path='/projects' element={<Projects />}></Route>
         </Routes>
       </BrowserRouter>
+      
     </div>
   );
 }
