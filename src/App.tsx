@@ -9,7 +9,7 @@ import Projects from './pages/Projects';
 
 function App() {
   return (
-    <div className="m-0 p-0 min-h-screen font-sans-serif bg-blue-950 text-white">
+    <div className="m-0 p-0 min-h-screen font-sans-serif bg-stone-950 text-white">
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Homepage />} />

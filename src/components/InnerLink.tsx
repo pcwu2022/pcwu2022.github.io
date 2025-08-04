@@ -6,7 +6,7 @@ const InnerLink = (props: {
     children: JSX.Element | string | null
 }) => {
   return (
-    <span className='text-blue-200 font-semibold hover:underline'>
+    <span className='text-blue-100 hover:underline'>
       <Link to={props.to}>{props.children}</Link>
     </span>
   )
