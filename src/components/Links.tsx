@@ -4,11 +4,15 @@ import { Link } from 'react-router-dom'
 const Links = () => {
   return (
     <div className='w-full bg-blue-950 p-4 text-white'>
-      <div className='ml-4 font-bold inline-block'>Po-Chun Wu</div>
-      <div className='inline-block ml-10'></div>
-      <div className='ml-4 mr-4 inline-block rounded-md p-2 pl-4 pr-4 bg-blue-800 font-semibold cursor-pointer hover:bg-white hover:text-blue-950'><Link to='/'>Home</Link></div>
-      <div className='ml-4 mr-4 inline-block rounded-md p-2 pl-4 pr-4 bg-blue-800 font-semibold cursor-pointer hover:bg-white hover:text-blue-950'><Link to='/research'>Research</Link></div>
-      <div className='ml-4 mr-4 inline-block rounded-md p-2 pl-4 pr-4 bg-blue-800 font-semibold cursor-pointer hover:bg-white hover:text-blue-950'><Link to='/projects'>Projects</Link></div>
+      <div className='flex flex-col md:flex-row md:items-center md:justify-between'>
+        <div className='text-center md:text-left mb-4 md:mb-0'>
+          <div className='font-bold text-xl cursor-pointer hover:text-blue-100'><Link to='/'>Po-Chun Wu</Link></div>
+        </div>
+        <div className='flex flex-wrap justify-center md:justify-end gap-2'>
+          <div className='font-semibold md:mr-4 cursor-pointer hover:text-blue-100'><Link to='/research'>Research</Link></div>
+          <div className='font-semibold md:mr-4 cursor-pointer hover:text-blue-100'><Link to='/projects'>Projects</Link></div>
+        </div>
+      </div>
     </div>
   )
 }

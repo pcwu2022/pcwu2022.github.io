@@ -9,29 +9,29 @@ const Homepage = () => {
     <div className='m-0 p-0 h-max'>
       <Links />
       <div className='w-full p-4'>
-        <div className='inline-block align-top w-1/3 p-8'>
-          <div className='w-full mb-8'>
-            <img src="/images/cep.jpg" alt="My Photo" style={{
+        <div className='md:inline-block align-top w-full md:w-1/3 p-4 md:p-8'>
+            <div className='w-full mb-8 max-w-xs mx-auto md:mx-0'>
+            <img src="/images/cep.jpg" alt="My Photo" className="w-3/4 sm:w-4/5 md:w-full mx-auto block" style={{
               borderRadius: "50%"
             }}/>
-          </div>
-          <div className='text-2xl font-bold mb-4'>Po-Chun Wu</div>
-          <div className='font-semibold mb-2'>National Taiwan University (NTU)</div>
-          <div className='mb-2'>
+            </div>
+          <div className='text-2xl font-bold mb-4 text-center md:text-left'>Po-Chun Wu</div>
+          <div className='font-semibold mb-2 text-center md:text-left'>National Taiwan University (NTU)</div>
+          <div className='mb-2 text-center md:text-left'>
             <span className='font-semibold'>Electrical Engineering</span><br />
             <span className='text-blue-200'>2022 - (2026)</span>
           </div>
-          <div className='mb-2'>
+          <div className='mb-2 text-center md:text-left'>
             <span className='font-semibold'>Creative and Entrepreneurial Program</span><br />
             <span className='text-blue-200'>2024 - 2025</span>
           </div>
-          <div className='text-cyan-100 mb-2'>
-            <div><Link to='#entrepreneur'>#Entrepreneur</Link></div>
-            <div><Link to='#leader'>#Leader</Link></div>
-            <div><Link to='#maker'>#Maker</Link></div>
+          <div className='text-cyan-100 mb-2 flex flex-row justify-center md:justify-start flex-wrap'>
+            <div className="mr-2"><Link to='#entrepreneur'>#Entrepreneur</Link></div>
+            <div className="mr-2"><Link to='#leader'>#Leader</Link></div>
+            <div className="mr-2"><Link to='#maker'>#Maker</Link></div>
           </div>
           <br />
-          <div className=''>
+          <div className='flex justify-center md:justify-start'>
             <div className='inline-block mr-4 rounded-lg align-top'>
               <Link to="https://www.linkedin.com/in/po-chun-wu-a683b027b/">
               <img width="30" height="30" src="/icons/linkedin.png" alt="LinkedIn" />
@@ -49,8 +49,8 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <div className='inline-block align-top w-2/3 p-8'>
-          <div className='text-2xl font-bold mb-4'>About Me</div>
+        <div className='md:inline-block align-top w-full md:w-2/3 p-4 md:p-8'>
+          <div className='text-2xl font-bold mb-4 text-center md:text-left'>About Me</div>
           <div className='mb-4' id='introduction'>
             I'm Po-Chun, a senior undergraduate at National Taiwan University, majoring in electrical engineering. 
             Previously, I have done research on <InnerLink to="/research#analog">analog and mixed-signal IC design</InnerLink> and <InnerLink to="/research#formal">solving graph problems using formal verification methods</InnerLink>. 
@@ -76,8 +76,8 @@ const Homepage = () => {
             For software, I created a random restaurant selector for NTU students, some JavaScript solitaire games, and an online hospital simulation system for SLEK, a medical student organization.
           </div>
         </div>
-        <div className='text-2xl font-bold mb-4 p-8 pb-4'>Highlights</div>
-        <div className='w-full p-8 pt-0'>
+        <div className='text-2xl font-bold mb-4 p-4 md:p-8 pb-2 md:pb-4 text-center md:text-left'>Highlights</div>
+        <div className='w-full p-4 md:p-8 pt-0 flex flex-wrap justify-center md:justify-start'>
           <Highlights 
             title='SAR ADC, PLL, and SerDes Design'
             image='/images/adc1.png'
