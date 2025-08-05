@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div className='m-0 p-0 h-max'>
       <Links />
-      <div className='w-full p-4'>
+      <div className='w-full max-w-7xl mx-auto p-4 md:px-8 lg:px-12'>
         <div className='p-8'>
           <div className='text-2xl font-bold mb-4'>Projects</div>
           <Display 
