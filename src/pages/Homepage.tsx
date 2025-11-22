@@ -59,7 +59,7 @@ const Homepage = () => {
           <div className='mb-4' id='entrepreneur'>
             <b>I'm an Entrepreneur. </b> 
             I see opportunities, enlighten others with my vision, and execute them passionately. 
-            I founded the NTU Learning Optimization Club in my sophomore year, and the Chinese Chess Association in high school. 
+            I founded the <InnerLink to='/startupleadership/#ntuloc'>NTU Learning Optimization Club</InnerLink> in my sophomore year, and the Chinese Chess Association in high school. 
             I initiated a one-year-long project to create <InnerLink to='/projects/#vmks'>an online replica of the NTUEE Makerspace</InnerLink>. 
             I also founded <InnerLink to='/projects/#ntupair'>NTU Pair</InnerLink> and <InnerLink to='/projects/#synality'>Synality</InnerLink>, two networking app startups, and served as a team leader in the creative and entrepreneurial program.</div>
           <div className='mb-4' id='leader'>
@@ -79,9 +79,19 @@ const Homepage = () => {
         <div className='text-2xl font-bold mb-4 p-4 md:p-8 pb-2 md:pb-4 text-center md:text-left'>Highlights</div>
         <div className='w-full p-4 md:p-8 pt-0 flex flex-wrap justify-center md:justify-start'>
           <Highlights 
-            title='SAR ADC, PLL, and SerDes Design'
+            title="Formal Verification"
+            image="/images/formal.png"
+            link="/research/#formal"
+          />
+          <Highlights 
+            title='SAR ADC and PLL Design'
             image='/images/adc1.png'
             link='/research/#analog'
+          />
+          <Highlights
+            title='Quantum vs Cryptocurrency'
+            image='/images/quantum.png'
+            link='/research/#quantum'
           />
           <Highlights 
             title='Monolayer Molybdenum Disulfide'

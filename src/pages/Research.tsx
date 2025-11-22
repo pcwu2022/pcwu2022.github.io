@@ -10,10 +10,37 @@ const Research = () => {
         <div className='p-8'>
           <div className='text-2xl font-bold mb-4'>Research</div>
           <Display 
-            id="analog"
-            title="SAR ADC, PLL, and SerDes Design"
+            id="formal"
+            title="In Search of the Smallest Vocabulary Set Using Formal Methods"
             supporting={[
-              "High-Speed Circuit Lab, Fall, 2024, In progress", 
+              "National Taiwan University, Spring, 2025", 
+              "Advisor: Prof. Chung-Yang (Ric) Huang, NTU"
+            ]}
+            images={[
+              ["/images/formal.png", "Algorithm for the SVS Problem"],
+              ["/images/formal_runtime.png", "Runtime Comparison of Different Methods"]
+            ]}
+            links={[
+              ["/documents/in_search_of_the_smallest_vocabulary_set_using_formal_methods_2025.pdf", "In Search of the Smallest Vocabulary Set Using Formal Methods"]
+            ]}
+          >
+            <>
+              <div className='mb-4'>
+              Prior to this research project, I was trying to figure out the most efficient sequence for learning a vocabulary set in a natural language using an algorithmic approach. 
+              I soon found out that it was an NP-hard variation of the Target Set Selection problem, which could be solved using the formal verification methods taught in SoCV,and thus I used this topic as my research project. 
+              </div><div className='mb-4'>
+              By encoding the set of vocabulary words into Boolean clauses, the problem can be decomposed into subproblems that are reduced to the Boolean satisfiability problem (SAT) using a polynomial-time reduction function. 
+              Furthermore, by treating each subproblem as a state in a finite-state machine, I can use algorithms such as Bounded Model Checking, Interpolation-Based Unbounded Model Checking, and Property-Directed Reachability to iteratively expand the reachable Boolean state space. 
+              </div><div className='mb-4'>
+              From this project, I learned that by formulating practical problems as finite-state machines, formal verification methods can be extended beyond circuit satisfiability, providing rigorous algorithmic guarantees for complex real-world systems.
+              </div>
+            </>
+          </Display>
+          <Display 
+            id="analog"
+            title="SAR ADC and PLL Design"
+            supporting={[
+              "High-Speed Circuit Lab, Fall, 2024", 
               "Advisor: Prof. Tai-Cheng Lee, NTU"
             ]}
             images={[
@@ -23,9 +50,40 @@ const Research = () => {
             links={[]}
           >
             <>
-              <div className='mb-4'>My current research topic is on mixed signals, including domain knowledge extension, paper reviews, and behavior model simulation. In the fall semester, I conducted MATLAB simulations on several ADC models based on references from the literature. My simulations include the conventional SAR ADC, a monotonic-switching SAR ADC, a split-capacitor SAR ADC with a variable-window function, a merge-switched capacitor SAR ADC, and a redundant-capacitor SAR ADC. The simulation also includes comparator noise, capacitor mismatch, parasitic capacitance, and power comparison, providing insights into the ADC design philosophies.</div>
-              <div className='mb-4'>While ADC design has been the primary focus of my recent research, I have also explored other mixed-signal topics, including phase-locked loops (PLLs) and continuous-time linear equalizers (CTLEs) for SerDes front-end design. My study involved reading foundational texts, such as Professor Razavi’s PLL textbook, and reviewing research papers on CTLE biasing strategies and feed-forward equalizers (FFEs).</div>
-              <div className='mb-4'>During the ongoing winter break, I plan to extend my research by simulating PLL designs discussed in Razavi’s textbook and deepening my understanding of CTLE biasing techniques and FFE implementation details.</div>
+                <div className='mb-4'>
+                My research topic for the fall semester of the third year was on mixed signals, including domain knowledge extension, paper reviews, and behavior model simulation.
+                I conducted MATLAB simulations on several ADC models based on references from the literature.
+                My simulations include the conventional SAR ADC, a monotonic-switching SAR ADC, a split-capacitor SAR ADC with a variable-window function, a merge-switched capacitor SAR ADC, and a redundant-capacitor SAR ADC.
+                The simulation also includes comparator noise, capacitor mismatch, parasitic capacitance, and power comparison.
+                These results provide insights into the ADC design philosophies.
+                </div>
+                <div className='mb-4'>
+                While ADC design has been the primary focus of my recent research, I have also explored other mixed-signal topics, including phase-locked loops (PLLs) and continuous-time linear equalizers (CTLEs) for SerDes front-end design.
+                My study involved reading foundational texts, such as Professor Razavi’s PLL textbook, and reviewing research papers on CTLE biasing strategies and feed-forward equalizers (FFEs).
+                </div></>
+          </Display>
+          <Display
+            id="quantum"
+            title="The Impact of Quantum Computing on Cryptocurrencies"
+            supporting={[
+              "National Taiwan University, Spring, 2025 (Coursework)",
+              "Lecturer: Prof. Hao-Chung Cheng, NTU"
+            ]}
+            images={[
+              ["/images/quantum.png", "A Quantum Algorithm for ECDLP"]
+            ]}
+            links={[
+              ["/documents/the_impact_on_quantum_computing_on_cryptocurrencies_2025.pdf", "The Impact of Quantum Computing on Cryptocurrencies"]
+            ]}
+          >
+            <>
+            <div className='mb-4'>
+            During the coursework project of <i>Quantum Information and Computation</i>, we surveyed the impact of quantum computing on cryptocurrencies, Bitcoin in particular.
+            </div><div className='mb-4'>
+            In this study, we explained how the ECDSA algorithm works in the Bitcoin blockchain, and derived its possible attack methods using mathematical proofs.
+            Our exploration on attack methods include the traditional Pollard's Rho Algorithm that uses Floyd's Cycle Finding Algorithm to efficiently guess the private key, and also the quantum ECDLP solver similar to the Shor Algorithm for factorization.
+            Moreover, we further explored the post-quantum security algorithms that can be used to replace ECDSA in the future, including hash-based signatures, lattice-based signatures, and multivariate polynomial signatures.
+            </div>
             </>
           </Display>
           <Display 
