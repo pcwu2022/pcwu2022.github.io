@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Page not found — redirecting</title>
+    <!-- Immediate meta refresh fallback -->
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+      // JS redirect as a more reliable fallback
+      try {
+        // Prefer replace() so back button won't return to the 404
+        window.location.replace('/');
+      } catch (e) {
+        window.location.href = '/';
+      }
+    </script>
+  </head>
+  <body>
+    <p>Not found. Redirecting to the <a href="/">homepage</a>…</p>
+  </body>
+</html>
