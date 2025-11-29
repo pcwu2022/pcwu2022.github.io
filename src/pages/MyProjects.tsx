@@ -2,12 +2,18 @@ import React from 'react'
 import Links from '../components/Links'
 import Display from '../components/Display';
 
-const Projects = () => {
+const MyProjects = () => {
   return (
     <div className='m-0 p-0 h-max'>
       <Links />
       <div className='w-full max-w-7xl mx-auto p-4 md:px-8 lg:px-12'>
         <div className='p-8'>
+          <a
+            href="/web_projects"
+            className="block mb-6 px-6 py-3 border-blue-800 border-2 text-white font-semibold rounded-md shadow hover:bg-blue-700 transition-colors duration-200 text-lg text-center"
+          >
+            View My Creations Online
+          </a>
           <div className='text-2xl font-bold mb-4'>Projects</div>
           <Display 
             id="ntupair"
@@ -44,4 +50,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default MyProjects

@@ -10,7 +10,7 @@ const Links = () => {
         </div>
         <div className='flex flex-wrap justify-center md:justify-end gap-2'>
           <div className='font-semibold md:ml-4 cursor-pointer hover:text-blue-100'><Link to='/research'>Research</Link></div>
-          <div className='font-semibold md:ml-4 cursor-pointer hover:text-blue-100'><Link to='/projects'>Projects</Link></div>
+          <div className='font-semibold md:ml-4 cursor-pointer hover:text-blue-100'><Link to='/my_projects'>Projects</Link></div>
           <div className='font-semibold md:ml-4 cursor-pointer hover:text-blue-100'><Link to='/startupleadership'>Startup Leadership</Link></div>
           <div className='font-semibold md:ml-4 cursor-pointer hover:text-blue-100'><a href='/documents/resume.pdf' target='_blank' rel='noopener noreferrer'>Resume</a></div>
         </div>

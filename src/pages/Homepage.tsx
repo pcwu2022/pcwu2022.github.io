@@ -60,8 +60,8 @@ const Homepage = () => {
             <b>I'm an Entrepreneur. </b> 
             I see opportunities, enlighten others with my vision, and execute them passionately. 
             I founded the <InnerLink to='/startupleadership/#ntuloc'>NTU Learning Optimization Club</InnerLink> in my sophomore year, and the Chinese Chess Association in high school. 
-            I initiated a one-year-long project to create <InnerLink to='/projects/#vmks'>an online replica of the NTUEE Makerspace</InnerLink>. 
-            I also founded <InnerLink to='/projects/#ntupair'>NTU Pair</InnerLink> and <InnerLink to='/projects/#synality'>Synality</InnerLink>, two networking app startups, and served as a team leader in the creative and entrepreneurial program.</div>
+            I initiated a one-year-long project to create <InnerLink to='/my_projects/#vmks'>an online replica of the NTUEE Makerspace</InnerLink>. 
+            I also founded <InnerLink to='/my_projects/#ntupair'>NTU Pair</InnerLink> and <InnerLink to='/my_projects/#synality'>Synality</InnerLink>, two networking app startups, and served as a team leader in the creative and entrepreneurial program.</div>
           <div className='mb-4' id='leader'>
             <b>I'm a Leader. </b> 
             I value cooperation, teamwork, and culture. 
@@ -101,12 +101,12 @@ const Homepage = () => {
           <Highlights 
             title='NTU Pair'
             image='/images/ntupair1.png'
-            link='/projects/#ntupair'
+            link='/my_projects/#ntupair'
           />
           <Highlights 
             title='Virtual Makerspace'
             image='/images/vmks1.png'
-            link='/projects/#vmks'
+            link='/my_projects/#vmks'
           />
         </div>
       </div>
