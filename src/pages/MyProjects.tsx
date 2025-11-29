@@ -10,7 +10,7 @@ const MyProjects = () => {
       <div className='w-full max-w-7xl mx-auto p-4 md:px-8 lg:px-12'>
         <div className='p-8'>
           <Link
-            to="/web_projects"
+            to="/projects"
             className="block mb-6 px-6 py-3 border-blue-800 border-2 text-white font-semibold rounded-md shadow hover:bg-blue-700 transition-colors duration-200 text-lg text-center"
           >
             View My Creations Online

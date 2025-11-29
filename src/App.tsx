@@ -17,7 +17,7 @@ function App() {
           <Route path='/research' element={<Research />}></Route>
           <Route path='/my_projects' element={<MyProjects />}></Route>
           <Route path='/startupleadership' element={<StartupLeadership />}></Route>
-          <Route path='/web_projects' element={<WebProjects />}></Route>
+          <Route path='/projects' element={<WebProjects />}></Route>
         </Routes>
       </BrowserRouter>
       
