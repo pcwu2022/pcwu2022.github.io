@@ -16,8 +16,8 @@ const StartupLeadership  = () => {
               ["/images/ntuloc1.jpg", "NTU LOC Club"], 
               ["/images/ntuloc2.jpg", "Speeches for High School Students"]]}
             links={[
-              ["https://ntu-learning-optimization-club.github.io/", "NTU LOC Official Website"],
-              ["https://www.youtube.com/watch?v=uUKqtxzOgb4", "My Speech on Effective Learning Methods at NEHS (My High School)"]
+              ["https://ntu-learning-optimization-club.github.io/", "NTULOC Official Website"],
+              ["https://www.youtube.com/watch?v=uUKqtxzOgb4", "My Speech on Effective Learning Methods"]
             ]}
           >
             <>
@@ -88,7 +88,7 @@ const StartupLeadership  = () => {
               </div>
             </>
           </Display>
-          <Display id="ntuee_camp"
+          <Display id="ntueecamp"
             title="NTUEE Summer Camp"
             supporting={["Leader, Advanced Teaching Group", "May 2023 — July 2023"]}
             images={[["/images/camp_1.jpg", "The custom-designed PCB of our product"], ["/images/camp_2.jpg", "Mass production pipeline"], ["/images/camp_3.jpg", "Our team"], ["/images/camp_4.png", "Teaching high school students Arduino programming and electronics"]]}

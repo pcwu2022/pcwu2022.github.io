@@ -20,7 +20,7 @@ const Research = () => {
               ["/images/formal_runtime.png", "Runtime Comparison of Different Methods"]
             ]}
             links={[
-              ["/documents/in_search_of_the_smallest_vocabulary_set_using_formal_methods_2025.pdf", "In Search of the Smallest Vocabulary Set Using Formal Methods"]
+              ["/documents/in_search_of_the_smallest_vocabulary_set_using_formal_methods_2025.pdf", "Report: Formal Verification"]
             ]}
           >
             <>
@@ -70,7 +70,7 @@ const Research = () => {
               ["/images/quantum.png", "A Quantum Algorithm for ECDLP"]
             ]}
             links={[
-              ["/documents/the_impact_on_quantum_computing_on_cryptocurrencies_2025.pdf", "The Impact of Quantum Computing on Cryptocurrencies"]
+              ["/documents/the_impact_on_quantum_computing_on_cryptocurrencies_2025.pdf", "Report: Quantum Computing & Cryptocurrencies"]
             ]}
           >
             <>
@@ -93,7 +93,7 @@ const Research = () => {
               ["/images/mos23.png", "MoS2 Under Raman Spectroscopy"], 
               ["/images/mos22.png", "MoS2 Under Microscope"]
             ]}
-            links={[["/documents/mos2_project.pdf", "Report: Separation and Transfer of Monolayer Molybdenum Disulfide (Chinese)"]]}
+            links={[["/documents/mos2_project.pdf", "Report: MoS2 Project (Chinese)"]]}
           >
             <>
               <div className='mb-4'>My research in high school is on the separation and transfer of monolayer Molybdenum Disulfide (MoS₂) using decane-dithiol and gold-plated silicon substrate, measured under a Raman spectroscopy microscope. MoS₂ exists as a bulk, or multilayer structure; however, similar to graphene, when a monolayer is separated from the bulk, it exhibits completely different properties. For example, a monolayer MoS₂ is a direct band gap semiconductor used in lasers, LEDs, and photoelectric diodes. However, producing MoS₂ with a thickness of several Angstroms isn’t an easy task. By conventional methods, it requires one week of soaking the MoS₂ in thiol solution, heating the MoS₂ to 773K for hours, and another week to transfer the monolayer MoS₂ onto another silicon substrate. Our research experiments on various parameters that affect the separation and transfer procedures, including exposure to UV light, ultrasonic agitation, heating, and timing.</div>

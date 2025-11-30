@@ -65,9 +65,9 @@ const Homepage = () => {
           <div className='mb-4' id='leader'>
             <b>I'm a Leader. </b> 
             I value cooperation, teamwork, and culture. 
-            I planned and executed over 25 lectures and activities throughout my one year of service in the student association. 
+            I planned and executed over 25 lectures and activities throughout my one year of service in the <InnerLink to="/startupleadership/#ntueesaad">student association</InnerLink>. 
             Additionally, I mentored my freshmen groupmates, equipping them with the skills necessary to excel in their future leadership roles. 
-            I've also led a team of 20 people to teach high-school students maker skills in the NTUEE summer camp.
+            I've also led a team of 20 people to teach high-school students maker skills in the <InnerLink to="/startupleadership/#ntueecamp">NTUEE summer camp</InnerLink>.
           </div>
           <div className='mb-4' id='maker'>
             <b>I'm a Maker. </b> 

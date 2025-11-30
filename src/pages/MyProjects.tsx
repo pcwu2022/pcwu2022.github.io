@@ -71,7 +71,7 @@ const MyProjects = () => {
             title="HelpMet — An AR Navigation Assistant for Motorcyclists"
             supporting={["Best Maker Award, 2024 MakeNTU Competition", "May 2024"]}
             images={[["/images/makentu2024_1.jpg", "Presenting on stage for the final round"], ["/images/makentu2024_2.jpg", "Receiving the Best Maker Award"], ["/images/makentu2024_3.png", "Our product demo"]]}
-            links={[["https://youtu.be/tlTyyKNcEA0?t=353", "A vlog made by my teammate showcasing our project (YouTube)"]]}
+            links={[["https://youtu.be/tlTyyKNcEA0?t=353", "A vlog showcasing our project (YouTube)"]]}
           >
             <>
                 <div className="mb-4">
@@ -90,8 +90,8 @@ const MyProjects = () => {
             supporting={["Product Developer at SLEKMED", "August 2023 — February 2025"]}
             images={[["/images/slek_1.jpg", "Our team at the CTCI headquarters office"], ["/images/slek_2.jpg", "Our team in front of the competition poster"], ["/images/slek_3.png", "Demonstration of the Online Diagnosis Process"]]}
             links={[
-              ["https://slek-system.vercel.app/projects/hyponatremia", "An online simulation of Hyponatremia diagnosis and simulation"], 
-              ["https://ssp.moe.gov.tw/cases/1047", "The showcase of our project on the Ministry of Education website"], 
+              ["https://slek-system.vercel.app/projects/hyponatremia", "A web-based Hyponatremia simulator"], 
+              ["https://ssp.moe.gov.tw/cases/1047", "Our project on the Ministry of Education website"], 
               ["https://www.ctci.org.tw/8838/talent/41184/45319/45576/", "CTCI AI Competition 2024 Official Page"]]}
           >
             <>
@@ -129,6 +129,18 @@ const MyProjects = () => {
                 NTUEE Light Dance is an annual performance organized by the NTUEE Student Association, where students showcase their creativity through synchronized light shows. In 2023, I contributed to the event by designing and building LED props for the performers. Our theme that year was <i>Bartender</i>, and my team and I created three LED bar cupboards that can be transformed into an arsenal during the performance. We also created a bar counter that can be split in half during the show. These props served as the main stage decorations, enhancing the visual impact of the performance.
               </div>
             </>
+          </Display>
+          <Display id="ntufood"
+            title="NTU Food"
+            supporting={["A random food selection website for NTU students", "May 2024"]}
+            images={[["/images/ntufood.png", "NTU Food Website"]]}
+            links={[["https://pcwu2022.github.io/ntufood/", "NTU Food Website"], ["https://youtu.be/arxHyiDv7VQ?t=1699", "Joeman's video featuring NTU Food (YouTube)"]]}
+            >
+              <>
+                <div className="mb-4">
+                  I built a website using <i>vanilla</i> JavaScript to help NTU students randomly select food options on campus. The website was featured in a famous Taiwanese YouTuber <i>Joeman</i>'s video reviewing NTU food options.
+                </div>
+              </>
           </Display>
         </div>
       </div>

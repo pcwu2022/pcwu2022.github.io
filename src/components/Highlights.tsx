@@ -16,7 +16,7 @@ const Highlights = (props: {
     >
       <Link to={props.link}>
         <div className='w-full h-full opacity-40 hover:opacity-80 cursor-pointer bg-blue-950 text-center'>
-          <div className='pt-28 text-lg font-bold'>{props.title}</div>
+          <div className='pt-28 text-lg font-bold truncate px-2'>{props.title}</div>
         </div>
       </Link>
     </div>

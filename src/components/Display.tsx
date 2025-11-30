@@ -32,7 +32,22 @@ const Display = (props: {
           <br />
           <div className="text-left">{props.children}</div>
           {props.links.map((el, index) => (
-            <div key={index} className='text-sm font-semibold mb-2 text-blue-100 hover:underline text-center md:text-left'><a href={el[0]}>{el[1]}</a></div>
+            <div key={index} className='mb-2 text-center md:text-left'>
+              <a
+                href={el[0]}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-2 py-0.5 text-sm text-blue-100 font-semibold rounded-md border border-blue-800 hover:bg-blue-900/20 transition-colors duration-150"
+                aria-label={`Open link: ${el[1]}`}
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span className="truncate max-w-[24rem]">{el[1]}</span>
+              </a>
+            </div>
           ))}
           <br />
       </div>
