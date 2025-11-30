@@ -44,6 +44,25 @@ const MyProjects = () => {
               <div className="mb-4">After three months, we created a prototype of the website with some basic functions. As the summer approached its end, the project was halted for the fall semester. For another month of development in winter and another two months in summer, the project is handed over to the information department of the NTUEE student association for annual maintenance, which signals the end of my journey as the visionary of NTUEE Virtual Makerspace.</div>
             </>
           </Display>
+          <Display
+            id="makentu"
+            title="HelpMet - An AR Navigation Assistant for Motorcyclists"
+            supporting={["Best Maker Award, 2024 MakeNTU Competition", "May 2024"]}
+            images={[["/images/makentu2024_1.jpg", "Presenting on stage for the final round"], ["/images/makentu2024_2.jpg", "Receiving the Best Maker Award"], ["/images/makentu2024_3.png", "Our product demo"]]}
+            links={[["https://youtu.be/tlTyyKNcEA0?t=353", "A vlog made by my teammate showcasing our project (YouTube)"]]}
+          >
+            <>
+              <div className="mb-4">
+                The MakeNTU 2024 competition was my second time to attend this maker event held my NTUEE. We created a navigation assistant mounted inside a motorcycle helmet, using speech recognition and AR technologies to help riders navigate safely. 
+              </div>
+              <div className="mb-4">
+                Our prototype used a Raspberry Pi as the main controller, connected to a microphone for voice input, an OLED display for AR output, and an online website to simulate motorcycle movement around the city and location tracking (because it is hard to demonstrate moving around during demo time). The system can recognize voice commands to set destinations and provide turn-by-turn navigation instructions given by the Google Maps API. The instructions would then be displayed on the OLED screen inside the helmet, using the reflection of the helmet visor to create an AR effect.
+              </div>
+              <div className="mb-4">
+                My role in this project was the system architect. Since the APIs voice recognition modules, and input commands were all asynchronous by nature, I designed a multi-threaded architecture to handle different tasks simultaneously. This architecture idea was brought from hardware flip-flop designs, where check bits and clock signals are used to synchronize different modules. By implementing this architecture, our system was able to respond to user commands in real-time, providing a smooth and efficient navigation experience. 
+              </div>
+            </>
+          </Display>
         </div>
           
       </div>
