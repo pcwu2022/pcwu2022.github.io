@@ -45,6 +45,33 @@ const MyProjects = () => {
             </>
           </Display>
           <Display
+            id="makentu2025"
+            title="Robotic Chameleon - Cockroach Catcher"
+            supporting={[
+              "First Place, Silicon Motion Corporate Award",
+              "2025 MakeNTU Competition",
+              "May 2025"
+            ]}
+            images={[
+              ["/images/makentu2025_1.jpg", "Presenting on stage for the final round"],
+              ["/images/makentu2025_2.jpg", "Receiving the  corporate award"],
+              ["/images/makentu2025_3.jpg", "Our prototype"]
+            ]}
+            links={[["https://www.youtube.com/shorts/4OHnhSw4PyA", "A short demo video of our project (YouTube)"]]}
+          >
+            <>
+              <div className="mb-4">
+                For the 2025 MakeNTU Competition, our team built a robotic chameleon capable of tracking and catching cockroaches using computer vision and a Raspberry Pi. Different from my previous attempts for the competition, this time we aimed to complete the project from the first line of code to the final presentation within just 24 hours with minimal preparation.
+              </div>
+              <div className="mb-4">
+                The system utilized a phone camera to capture consecutive images of the environment, which were then processed my a computer vision algorithm to identify cockroaches based on their shape and color. Once a cockroach was detected, the phone would send the coordinates on the image to the Raspberry Pi, which would then warp those coordinates into real-world positions using perspective transformation and feed the positions into a PID controller algorithm to determine the movement of the chameleon. The chameleon was equipped with a mechanical tongue made from a servo motor, which could rapidly fire to catch the cockroach once it was within range.
+              </div>
+              <div className="mb-4">
+                In the end, we successfully finished our project in less than 24 consecutive hours, and we made it to the final round on stage. Our efforts were recognized by the judging panel sponsored by Silicon Motion, awarding us first place in the corporate award category.
+              </div>
+            </>
+          </Display>
+          <Display
             id="makentu"
             title="HelpMet - An AR Navigation Assistant for Motorcyclists"
             supporting={["Best Maker Award, 2024 MakeNTU Competition", "May 2024"]}
@@ -52,9 +79,9 @@ const MyProjects = () => {
             links={[["https://youtu.be/tlTyyKNcEA0?t=353", "A vlog made by my teammate showcasing our project (YouTube)"]]}
           >
             <>
-              <div className="mb-4">
-                The MakeNTU 2024 competition was my second time to attend this maker event held my NTUEE. We created a navigation assistant mounted inside a motorcycle helmet, using speech recognition and AR technologies to help riders navigate safely. 
-              </div>
+                <div className="mb-4">
+                  The MakeNTU 2024 competition was my second time attending this maker event held by NTUEE. We created a navigation assistant mounted inside a motorcycle helmet, using speech recognition and AR technologies to help riders navigate safely. Our aim was to help motorcyclists "leave home happily and return safely." In Taiwan, over 50,000 motorcycle accidents occur annually, often due to distracted driving while using navigation devices. Our project minimizes distraction by keeping navigation info visible and riders focused on the road.
+                </div>
               <div className="mb-4">
                 Our prototype used a Raspberry Pi as the main controller, connected to a microphone for voice input, an OLED display for AR output, and an online website to simulate motorcycle movement around the city and location tracking (because it is hard to demonstrate moving around during demo time). The system can recognize voice commands to set destinations and provide turn-by-turn navigation instructions given by the Google Maps API. The instructions would then be displayed on the OLED screen inside the helmet, using the reflection of the helmet visor to create an AR effect.
               </div>
@@ -63,6 +90,7 @@ const MyProjects = () => {
               </div>
             </>
           </Display>
+          
         </div>
           
       </div>
