@@ -19,11 +19,11 @@ const Homepage = () => {
           <div className='font-semibold mb-2 text-center md:text-left'>National Taiwan University (NTU)</div>
           <div className='mb-2 text-center md:text-left'>
             <span className='font-semibold'>Electrical Engineering</span><br />
-            <span className='text-blue-200'>2022 - (2026)</span>
+            <span className='text-blue-200'>2022 — (2026)</span>
           </div>
           <div className='mb-2 text-center md:text-left'>
             <span className='font-semibold'>Creative and Entrepreneurial Program</span><br />
-            <span className='text-blue-200'>2024 - 2025</span>
+            <span className='text-blue-200'>2024 — 2025</span>
           </div>
           <div className='text-cyan-100 mb-2 flex flex-row justify-center md:justify-start flex-wrap'>
             <div className="mr-2"><Link to='#entrepreneur'>#Entrepreneur</Link></div>
@@ -33,7 +33,7 @@ const Homepage = () => {
           <br />
           <div className='flex justify-center md:justify-start'>
             <div className='inline-block mr-4 rounded-lg align-top'>
-              <Link to="https://www.linkedin.com/in/po-chun-wu-a683b027b/">
+              <Link to="linkedin.com/in/pcwu2022">
               <img width="30" height="30" src="/icons/linkedin.png" alt="LinkedIn" />
               </Link>
             </div>
@@ -72,8 +72,8 @@ const Homepage = () => {
           <div className='mb-4' id='maker'>
             <b>I'm a Maker. </b> 
             I see problems, use my knowledge as a toolbox, and solve them. 
-            For hardware, I designed and built a programmable glowing bike, the props for the NTUEE Light Dance, and an AR device for motorists to navigate around the city, for which we won the best maker award in the annual MakeNTU competition. 
-            For software, I created a random restaurant selector for NTU students, some JavaScript solitaire games, and an online hospital simulation system for SLEK, a medical student organization.
+            For hardware, I designed and built a programmable <InnerLink to="/my_projects#lightbike">glowing bike</InnerLink>, the props for the <InnerLink to="/my_projects#lightdance">NTUEE Light Dance</InnerLink>, and an <InnerLink to="/my_projects#makentu2024">AR device</InnerLink> for motorists to navigate around the city, for which we won the best maker award in the annual MakeNTU competition. 
+            For software, I created a random restaurant selector for NTU students, some <InnerLink to="/projects">JavaScript solitaire games</InnerLink>, and an <InnerLink to="/my_projects#sleksystem">online hospital simulation system</InnerLink> for SLEK, a medical student organization.
           </div>
         </div>
         <div className='text-2xl font-bold mb-4 p-4 md:p-8 pb-2 md:pb-4 text-center md:text-left'>Highlights</div>
@@ -89,14 +89,14 @@ const Homepage = () => {
             link='/research/#analog'
           />
           <Highlights
-            title='Quantum vs Cryptocurrency'
-            image='/images/quantum.png'
-            link='/research/#quantum'
+            title='NTULOC'
+            image='/images/ntuloc1.jpg'
+            link='/startupleadership/#ntuloc'
           />
-          <Highlights 
-            title='Monolayer Molybdenum Disulfide'
-            image='/images/mos22.png'
-            link='/research/#mos2'
+          <Highlights
+            title='NTUCEP'
+            image='/images/ntucep_1.png'
+            link='/startupleadership/#ntucep'
           />
           <Highlights 
             title='NTU Pair'
@@ -107,6 +107,16 @@ const Homepage = () => {
             title='Virtual Makerspace'
             image='/images/vmks1.png'
             link='/my_projects/#vmks'
+          />
+          <Highlights
+            title='Quantum vs Cryptocurrency'
+            image='/images/quantum.png'
+            link='/research/#quantum'
+          />
+          <Highlights 
+            title='Monolayer Molybdenum Disulfide'
+            image='/images/mos22.png'
+            link='/research/#mos2'
           />
         </div>
       </div>

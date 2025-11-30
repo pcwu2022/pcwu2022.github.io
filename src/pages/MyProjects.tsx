@@ -16,10 +16,9 @@ const MyProjects = () => {
             View My Creations Online
           </Link>
           <div className='text-2xl font-bold mb-4'>Projects</div>
-          <Display 
-            id="ntupair"
+          <Display id="ntupair"
             title="NTU Pair"
-            supporting={["A Self-designed Matchmaking Platform", "December 2022 - February 2023"]}
+            supporting={["A Self-designed Matchmaking Platform", "December 2022 — February 2023"]}
             images={[["/images/ntupair1.png", "NTU Pair UI"]]}
             links={[["https://www.youtube.com/watch?v=ELeGZ4Aa1mE", "NTU Pair User Guide (YouTube)"], ["https://github.com/pcwu2022/ntupair_readonly", "Github (Readonly Version)"]]}
           >
@@ -30,10 +29,9 @@ const MyProjects = () => {
               <div className='mb-4'>Two years have passed since the NTU Pair failure. Since then, I learned that doing what I imagine is not sufficient to create value for the customers; moreover, it’s even worse to put my ego in front of reality. Sometimes, it’s just better to have partners to brainstorm and develop together. Using others’ code is not a shame whatsoever. Only by standing on the shoulders of a giant can we make the best out of our skills.</div>
             </>
           </Display>
-          <Display
-            id='vmks'
+          <Display id='vmks'
             title='Virtual Makerspace'
-            supporting={["An Online Replica of The NTUEE Makerspace", "May 2023 - September 2024"]}
+            supporting={["An Online Replica of The NTUEE Makerspace", "May 2023 — August 2023"]}
             images={[["/images/vmks1.png", "Virtual Makerspace Homepage"], ["/images/vmks2.png", "Boards and Tools Page"], ["/images/vmks3.jpeg", "Virtual Makerspace Team"]]}
             links={[]}
           >
@@ -44,13 +42,11 @@ const MyProjects = () => {
               <div className="mb-4">After three months, we created a prototype of the website with some basic functions. As the summer approached its end, the project was halted for the fall semester. For another month of development in winter and another two months in summer, the project is handed over to the information department of the NTUEE student association for annual maintenance, which signals the end of my journey as the visionary of NTUEE Virtual Makerspace.</div>
             </>
           </Display>
-          <Display
-            id="makentu2025"
-            title="Robotic Chameleon - Cockroach Catcher"
+          <Display id="makentu2025"
+            title="Robotic Chameleon — Cockroach Catcher"
             supporting={[
               "First Place, Silicon Motion Corporate Award",
-              "2025 MakeNTU Competition",
-              "May 2025"
+              "2025 MakeNTU Competition, May 2025"
             ]}
             images={[
               ["/images/makentu2025_1.jpg", "Presenting on stage for the final round"],
@@ -71,9 +67,8 @@ const MyProjects = () => {
               </div>
             </>
           </Display>
-          <Display
-            id="makentu"
-            title="HelpMet - An AR Navigation Assistant for Motorcyclists"
+          <Display id="makentu2024"
+            title="HelpMet — An AR Navigation Assistant for Motorcyclists"
             supporting={["Best Maker Award, 2024 MakeNTU Competition", "May 2024"]}
             images={[["/images/makentu2024_1.jpg", "Presenting on stage for the final round"], ["/images/makentu2024_2.jpg", "Receiving the Best Maker Award"], ["/images/makentu2024_3.png", "Our product demo"]]}
             links={[["https://youtu.be/tlTyyKNcEA0?t=353", "A vlog made by my teammate showcasing our project (YouTube)"]]}
@@ -90,9 +85,52 @@ const MyProjects = () => {
               </div>
             </>
           </Display>
-          
+          <Display id="sleksystem"
+            title="Online Medical Diagnosis and Simulation Systems"
+            supporting={["Product Developer at SLEKMED", "August 2023 — February 2025"]}
+            images={[["/images/slek_1.jpg", "Our team at the CTCI headquarters office"], ["/images/slek_2.jpg", "Our team in front of the competition poster"], ["/images/slek_3.png", "Demonstration of the Online Diagnosis Process"]]}
+            links={[
+              ["https://slek-system.vercel.app/projects/hyponatremia", "An online simulation of Hyponatremia diagnosis and simulation"], 
+              ["https://ssp.moe.gov.tw/cases/1047", "The showcase of our project on the Ministry of Education website"], 
+              ["https://www.ctci.org.tw/8838/talent/41184/45319/45576/", "CTCI AI Competition 2024 Official Page"]]}
+          >
+            <>
+              <div className='mb-4'>
+                In the summer of 2023, I joined SLEKMED, an educational startup composed of 60 medical students, tailored to help high school students explore and understand medical-related academic studies. Serving as one of the two product developers with a tech background, I collaborated with medical students to create web-based diagnosis simulation systems as teaching aids. During my time at SLEKMED, I worked on two major projects: the Hyponatremia Diagnosis Simulation System and the Online-Hospital AI Simulation system.
+              </div>
+              <div className='mb-4'>
+                The Hyponatremia system allowed students to practice diagnosing and treating hyponatremia cases through an interactive web interface. Collaborating with medical students, we designed the algorithm to simulate real-life scenarios, including patient history, symptoms, and lab results. Students could make decisions on diagnosis and treatment, receiving immediate feedback on their choices. Our system was awarded funding from the Ministry of Education's <i>Start-up Simulation Platform for University and Tertiary College</i> program, recognizing its potential to enhance medical education.
+              </div>
+              <div className='mb-4'>
+                The Online-Hospital AI Simulation System was a different approach to medical education. This system used Notion and Gather as the user interface, allowing students to navigate a virtual hospital environment and use Notion's databases to simulate writing medical records, ordering tests, and prescribing treatments. To simulate patient interactions, we integrated an AI chatbot, enabling dynamic conversations with virtual patients. This project won the first place in the <i>2024 CTCI AI Competiton</i> with a grand award of 400K NTD, standing out among 40+ teams nationwide.
+              </div>
+            </>
+          </Display>
+          <Display id="lightbike"
+            title="Light Bike"
+            supporting={["An LED show mounted on a bicycle", "September 2024"]}
+            images={[["/images/lightbike.jpg", "My Light Bike"]]}
+            links={[["https://youtube.com/shorts/hiSOKbT3xVI?feature=share", "A short demo video of my project (YouTube)"]]}
+          >
+            <>
+              <div className="mb-4">
+                I built a programmable LED light show for a bicycle using LED strips and a D1 Mini microcontroller. The system can be remotely controlled via a website, allowing dynamic lighting effects while riding.
+              </div>
+            </>
+          </Display>
+          <Display id="lightdance"
+            title="NTUEE Light Dance Props"
+            supporting={["Props for NTUEE Light Dance", "January 2023 — March 2023"]}
+            images={[["/images/lightdance_1.jpg", "Making the Light Dance Props"], ["/images/lightdance_2.jpg", "Light Dance Performance"]]}
+            links={[["https://www.youtube.com/watch?v=u10oLI85Ip0", "NTUEE Light Dance 2023 Performance (YouTube)"]]}
+          >
+            <>
+              <div className="mb-4">
+                NTUEE Light Dance is an annual performance organized by the NTUEE Student Association, where students showcase their creativity through synchronized light shows. In 2023, I contributed to the event by designing and building LED props for the performers. Our theme that year was <i>Bartender</i>, and my team and I created three LED bar cupboards that can be transformed into an arsenal during the performance. We also created a bar counter that can be split in half during the show. These props served as the main stage decorations, enhancing the visual impact of the performance.
+              </div>
+            </>
+          </Display>
         </div>
-          
       </div>
     </div>
   )

@@ -9,8 +9,7 @@ const Research = () => {
       <div className='w-full max-w-7xl mx-auto p-4 md:px-8 lg:px-12'>
         <div className='p-8'>
           <div className='text-2xl font-bold mb-4'>Research</div>
-          <Display 
-            id="formal"
+          <Display id="formal"
             title="In Search of the Smallest Vocabulary Set Using Formal Methods"
             supporting={[
               "National Taiwan University, Spring, 2025", 
@@ -36,8 +35,7 @@ const Research = () => {
               </div>
             </>
           </Display>
-          <Display 
-            id="analog"
+          <Display id="analog"
             title="SAR ADC and PLL Design"
             supporting={[
               "High-Speed Circuit Lab, Fall, 2024", 
@@ -62,8 +60,7 @@ const Research = () => {
                 My study involved reading foundational texts, such as Professor Razavi’s PLL textbook, and reviewing research papers on CTLE biasing strategies and feed-forward equalizers (FFEs).
                 </div></>
           </Display>
-          <Display
-            id="quantum"
+          <Display id="quantum"
             title="The Impact of Quantum Computing on Cryptocurrencies"
             supporting={[
               "National Taiwan University, Spring, 2025 (Coursework)",
@@ -86,8 +83,7 @@ const Research = () => {
             </div>
             </>
           </Display>
-          <Display 
-            id="mos2"
+          <Display  id="mos2"
             title="Separation and Transfer of Monolayer Molybdenum Disulfide"
             supporting={[
               "National Synchrotron Radiation Research Center, Spring, 2021", 
@@ -97,7 +93,7 @@ const Research = () => {
               ["/images/mos23.png", "MoS2 Under Raman Spectroscopy"], 
               ["/images/mos22.png", "MoS2 Under Microscope"]
             ]}
-            links={[]}
+            links={[["/documents/mos2_project.pdf", "Report: Separation and Transfer of Monolayer Molybdenum Disulfide (Chinese)"]]}
           >
             <>
               <div className='mb-4'>My research in high school is on the separation and transfer of monolayer Molybdenum Disulfide (MoS₂) using decane-dithiol and gold-plated silicon substrate, measured under a Raman spectroscopy microscope. MoS₂ exists as a bulk, or multilayer structure; however, similar to graphene, when a monolayer is separated from the bulk, it exhibits completely different properties. For example, a monolayer MoS₂ is a direct band gap semiconductor used in lasers, LEDs, and photoelectric diodes. However, producing MoS₂ with a thickness of several Angstroms isn’t an easy task. By conventional methods, it requires one week of soaking the MoS₂ in thiol solution, heating the MoS₂ to 773K for hours, and another week to transfer the monolayer MoS₂ onto another silicon substrate. Our research experiments on various parameters that affect the separation and transfer procedures, including exposure to UV light, ultrasonic agitation, heating, and timing.</div>
