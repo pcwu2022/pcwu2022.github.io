@@ -6,8 +6,8 @@ const StartupLeadership  = () => {
   return (
     <div className='m-0 p-0 h-max'>
       <Links />
-      <div className='w-full max-w-7xl mx-auto p-4 md:px-8 lg:px-12'>
-        <div className='p-8'>
+      <div className='w-full max-w-7xl mx-auto px-2 py-2 md:px-8 lg:px-12'>
+        <div className='p-6 md:p-8'>
           <div className='text-2xl font-bold mb-4'>Startup Leadership</div>
           <Display id="ntuloc"
             title="NTU Learning Optimization Club"

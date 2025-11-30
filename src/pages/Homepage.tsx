@@ -8,7 +8,7 @@ const Homepage = () => {
   return (
     <div className='m-0 p-0 h-max'>
       <Links />
-      <div className='w-full max-w-7xl mx-auto p-4 md:px-8 lg:px-12'>
+      <div className='w-full max-w-7xl mx-auto px-2 py-2 md:px-8 lg:px-12'>
         <div className='md:inline-block align-top w-full md:w-1/3 p-4 md:p-8'>
             <div className='w-full mb-8 max-w-xs mx-auto md:mx-0'>
             <img src="/images/cep.jpg" alt="My Photo" className="w-3/4 sm:w-4/5 md:w-full mx-auto block" style={{

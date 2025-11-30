@@ -53,13 +53,13 @@ const Display = (props: {
       </div>
       
       {/* Images section - appears second on mobile, right on md+ */}
-      <div className='w-full md:w-1/3 xl:w-2/12 align-top order-2 md:order-2 mt-4 md:mt-0'>
+      <div className='w-full md:w-1/3 xl:w-2/12 align-top order-2 md:order-2 mt-2 md:mt-0'>
         {props.images.map((el) => (
           <div key={el[0]} className="mb-4">
             <img
               src={el[0]}
               alt={el[1]}
-              className='w-full max-w-xs mx-auto md:mx-0 cursor-pointer'
+              className='w-full md:max-w-xs mx-0 cursor-pointer'
               onClick={() => openPreview(el[0], el[1])}
               role="button"
               tabIndex={0}
@@ -67,7 +67,7 @@ const Display = (props: {
                 if (e.key === 'Enter' || e.key === ' ') openPreview(el[0], el[1])
               }}
             />
-            <div className="text-center md:text-left mt-2">▲&nbsp;{el[1]}</div>
+            <div className="text-left md:text-left mt-2">▲&nbsp;{el[1]}</div>
           </div>
         ))}
       </div>
