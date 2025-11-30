@@ -51,8 +51,8 @@ const StartupLeadership  = () => {
             </>
           </Display>
           <Display id="synality"
-            title="Co-founder and CEO, Synality"
-            supporting={["Dec 2024 — Feb 2025", "Synality, a matchmaking startup"]}
+            title="Synality, a matchmaking startup"
+            supporting={["Co-founder and CEO", "Dec 2024 — Feb 2025"]}
             images={[["/images/synality_1.jpg", "Our brainstorming process"], ["/images/synality_2.png", "Synality App Demo"]]}
             links={[["https://www.youtube.com/watch?v=PR5GrGPCx5Y", "Demo video for our second MVP"]]}
           >
