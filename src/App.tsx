@@ -14,11 +14,46 @@ function App() {
     const location = useLocation();
 
     const scrollToAnchor = () => {
-      const raw = window.location.hash || '' // leading '#'
-      if (!raw) return
-      const withoutHash = raw.slice(1) // remove first '#', e.g. '/my_projects#makentu2024'
-      const parts = withoutHash.split('#')
-      const anchor = parts.length > 1 ? parts.slice(1).join('#') : ''
+      const rawHash = window.location.hash || '' // leading '#'
+      // Try to find the anchor in multiple places:
+      // 1. ?section=... in window.location.search (normal query)
+      // 2. ?section=... inside the hash (e.g. '#/page?section=id')
+      // 3. fragment after an additional '#' inside the hash (existing behavior)
+      let anchor = ''
+
+      // 1. check real search params first
+      try {
+        const searchParams = new URLSearchParams(window.location.search)
+        if (searchParams.has('section')) {
+          anchor = searchParams.get('section') || ''
+        }
+      } catch (e) {
+        // ignore
+      }
+
+      // If not found, inspect the hash string (without leading '#') for '?section=' or a secondary '#'
+      if (!anchor && rawHash) {
+        const withoutHash = rawHash.slice(1) // remove leading '#'
+        // If hash contains a '?', parse its query portion
+        const qIndex = withoutHash.indexOf('?')
+        if (qIndex !== -1) {
+          const queryPartAndMaybeHash = withoutHash.slice(qIndex + 1)
+          const qp = queryPartAndMaybeHash.split('#')[0]
+          try {
+            const params = new URLSearchParams(qp)
+            if (params.has('section')) anchor = params.get('section') || ''
+          } catch (e) {
+            // ignore
+          }
+        }
+
+        // Fallback: existing behavior — treat trailing '#id' inside the hash
+        if (!anchor) {
+          const parts = withoutHash.split('#')
+          anchor = parts.length > 1 ? parts.slice(1).join('#') : ''
+        }
+      }
+
       if (anchor) {
         // small delay to allow routed content to render
         setTimeout(() => {
