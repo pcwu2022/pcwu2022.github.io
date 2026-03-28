@@ -33,7 +33,7 @@ const Homepage = () => {
           <br />
           <div className='flex justify-center md:justify-start'>
             <div className='inline-block mr-4 rounded-lg align-top'>
-              <Link to="linkedin.com/in/pcwu2022">
+              <Link to="https://www.linkedin.com/in/pcwu2022">
               <img width="30" height="30" src="/icons/linkedin.png" alt="LinkedIn" />
               </Link>
             </div>
