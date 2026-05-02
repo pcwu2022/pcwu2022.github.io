@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const InnerLink = (props: {
     to: string,
-    children: JSX.Element | string | null
+  children: React.ReactNode
 }) => {
   return (
     <span className='text-blue-100 hover:underline'>

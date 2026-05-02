@@ -1,0 +1,118 @@
+{
+  "profile": {
+    "name": "Po-Chun Wu",
+    "photo": {
+      "src": "/images/cep.jpg",
+      "alt": "My Photo"
+    },
+    "affiliation": "National Taiwan University (NTU)",
+    "programs": [
+      {
+        "title": "Electrical Engineering",
+        "dates": "2022 — (2026)"
+      },
+      {
+        "title": "Creative and Entrepreneurial Program",
+        "dates": "2024 — 2025"
+      }
+    ],
+    "tags": [
+      {
+        "label": "#Entrepreneur",
+        "to": "#entrepreneur"
+      },
+      {
+        "label": "#Leader",
+        "to": "#leader"
+      },
+      {
+        "label": "#Maker",
+        "to": "#maker"
+      }
+    ],
+    "socialLinks": [
+      {
+        "href": "https://www.linkedin.com/in/pcwu2022",
+        "icon": "/icons/linkedin.png",
+        "alt": "LinkedIn"
+      },
+      {
+        "href": "https://github.com/pcwu2022",
+        "icon": "https://avatars.githubusercontent.com/u/59704711?s=200&v=4",
+        "alt": "Github"
+      }
+    ]
+  },
+  "about": {
+    "title": "About Me",
+    "sections": [
+      {
+        "id": "introduction",
+        "body": [
+          "I'm Po-Chun, a senior undergraduate at National Taiwan University, majoring in electrical engineering. Previously, I have done research on [[/research#analog|analog and mixed-signal IC design]] and [[/research#formal|solving graph problems using formal verification methods]]. Still, my interests include computer architecture, algorithms, bioengineering, and programming in general."
+        ]
+      },
+      {
+        "id": "entrepreneur",
+        "body": [
+          "**I'm an Entrepreneur.** I see opportunities, enlighten others with my vision, and execute them passionately. I founded the [[/startupleadership/#ntuloc|NTU Learning Optimization Club]] in my sophomore year, and the Chinese Chess Association in high school. I initiated a one-year-long project to create [[/my_projects/#vmks|an online replica of the NTUEE Makerspace]]. I also founded [[/my_projects/#ntupair|NTU Pair]] and [[/my_projects/#synality|Synality]], two networking app startups, and served as a team leader in the creative and entrepreneurial program."
+        ]
+      },
+      {
+        "id": "leader",
+        "body": [
+          "**I'm a Leader.** I value cooperation, teamwork, and culture. I planned and executed over 25 lectures and activities throughout my one year of service in the [[/startupleadership/#ntueesaad|student association]]. Additionally, I mentored my freshmen groupmates, equipping them with the skills necessary to excel in their future leadership roles. I've also led a team of 20 people to teach high-school students maker skills in the [[/startupleadership/#ntueecamp|NTUEE summer camp]]."
+        ]
+      },
+      {
+        "id": "maker",
+        "body": [
+          "**I'm a Maker.** I see problems, use my knowledge as a toolbox, and solve them. For hardware, I designed and built a programmable [[/my_projects#lightbike|glowing bike]], the props for the [[/my_projects#lightdance|NTUEE Light Dance]], and an [[/my_projects#makentu2024|AR device]] for motorists to navigate around the city, for which we won the best maker award in the annual MakeNTU competition. For software, I created a random restaurant selector for NTU students, some [[/projects|JavaScript solitaire games]], and an [[/my_projects#sleksystem|online hospital simulation system]] for SLEK, a medical student organization."
+        ]
+      }
+    ]
+  },
+  "highlightsTitle": "Highlights",
+  "highlights": [
+    {
+      "title": "Formal Verification",
+      "image": "/images/formal.png",
+      "link": "/research/#formal"
+    },
+    {
+      "title": "SAR ADC and PLL Design",
+      "image": "/images/adc1.png",
+      "link": "/research/#analog"
+    },
+    {
+      "title": "NTULOC",
+      "image": "/images/ntuloc1.jpg",
+      "link": "/startupleadership/#ntuloc"
+    },
+    {
+      "title": "NTUCEP",
+      "image": "/images/ntucep_1.png",
+      "link": "/startupleadership/#ntucep"
+    },
+    {
+      "title": "NTU Pair",
+      "image": "/images/ntupair1.png",
+      "link": "/my_projects/#ntupair"
+    },
+    {
+      "title": "Virtual Makerspace",
+      "image": "/images/vmks1.png",
+      "link": "/my_projects/#vmks"
+    },
+    {
+      "title": "Quantum vs Cryptocurrency",
+      "image": "/images/quantum.png",
+      "link": "/research/#quantum"
+    },
+    {
+      "title": "Monolayer Molybdenum Disulfide",
+      "image": "/images/mos22.png",
+      "link": "/research/#mos2"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import Links from '../components/Links'
-import Display from '../components/Display';
+import DisplaySection from '../components/DisplaySection'
+import lifeContent from '../content/life.json'
 
 const Life  = () => {
   return (
@@ -8,18 +9,10 @@ const Life  = () => {
       <Links />
       <div className='w-full max-w-7xl mx-auto px-2 py-2 md:px-8 lg:px-12'>
         <div className='p-6 md:p-8'>
-          <div className='text-2xl font-bold mb-4'>Personal Life</div>
-          <Display 
-            id="acquired"
-            title="Acquired Podcast"
-            supporting={["A podcast I listen to in my leisure time"]}
-            images={[]}
-            links={[]}
-          >
-            <>
-              <div className='mb-4'></div>
-            </>
-          </Display>
+          <div className='text-2xl font-bold mb-4'>{lifeContent.title}</div>
+          {lifeContent.items.map((item) => (
+            <DisplaySection key={item.id} item={item} />
+          ))}
         </div>
       </div>
     </div>

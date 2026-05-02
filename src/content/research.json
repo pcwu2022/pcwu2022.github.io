@@ -1,0 +1,109 @@
+{
+  "title": "Research",
+  "items": [
+    {
+      "id": "formal",
+      "title": "In Search of the Smallest Vocabulary Set Using Formal Methods",
+      "supporting": [
+        "National Taiwan University, Spring, 2025",
+        "Advisor: Prof. Chung-Yang (Ric) Huang, NTU"
+      ],
+      "images": [
+        {
+          "src": "/images/formal.png",
+          "alt": "Algorithm for the SVS Problem"
+        },
+        {
+          "src": "/images/formal_runtime.png",
+          "alt": "Runtime Comparison of Different Methods"
+        }
+      ],
+      "links": [
+        {
+          "href": "/documents/in_search_of_the_smallest_vocabulary_set_using_formal_methods_2025.pdf",
+          "label": "Report: Formal Verification"
+        }
+      ],
+      "body": [
+        "Prior to this research project, I was trying to figure out the most efficient sequence for learning a vocabulary set in a natural language using an algorithmic approach. I soon found out that it was an NP-hard variation of the Target Set Selection problem, which could be solved using the formal verification methods taught in SoCV,and thus I used this topic as my research project.",
+        "By encoding the set of vocabulary words into Boolean clauses, the problem can be decomposed into subproblems that are reduced to the Boolean satisfiability problem (SAT) using a polynomial-time reduction function. Furthermore, by treating each subproblem as a state in a finite-state machine, I can use algorithms such as Bounded Model Checking, Interpolation-Based Unbounded Model Checking, and Property-Directed Reachability to iteratively expand the reachable Boolean state space.",
+        "From this project, I learned that by formulating practical problems as finite-state machines, formal verification methods can be extended beyond circuit satisfiability, providing rigorous algorithmic guarantees for complex real-world systems."
+      ]
+    },
+    {
+      "id": "analog",
+      "title": "SAR ADC and PLL Design",
+      "supporting": [
+        "High-Speed Circuit Lab, Fall, 2024",
+        "Advisor: Prof. Tai-Cheng Lee, NTU"
+      ],
+      "images": [
+        {
+          "src": "/images/adc1.png",
+          "alt": "ADC capacitor mismatch simulation"
+        },
+        {
+          "src": "/images/adc2.png",
+          "alt": "ADC switching behavior model"
+        }
+      ],
+      "links": [],
+      "body": [
+        "My research topic for the fall semester of the third year was on mixed signals, including domain knowledge extension, paper reviews, and behavior model simulation. I conducted MATLAB simulations on several ADC models based on references from the literature. My simulations include the conventional SAR ADC, a monotonic-switching SAR ADC, a split-capacitor SAR ADC with a variable-window function, a merge-switched capacitor SAR ADC, and a redundant-capacitor SAR ADC. The simulation also includes comparator noise, capacitor mismatch, parasitic capacitance, and power comparison. These results provide insights into the ADC design philosophies.",
+        "While ADC design has been the primary focus of my recent research, I have also explored other mixed-signal topics, including phase-locked loops (PLLs) and continuous-time linear equalizers (CTLEs) for SerDes front-end design. My study involved reading foundational texts, such as Professor Razavi’s PLL textbook, and reviewing research papers on CTLE biasing strategies and feed-forward equalizers (FFEs)."
+      ]
+    },
+    {
+      "id": "quantum",
+      "title": "The Impact of Quantum Computing on Cryptocurrencies",
+      "supporting": [
+        "National Taiwan University, Spring, 2025 (Coursework)",
+        "Lecturer: Prof. Hao-Chung Cheng, NTU"
+      ],
+      "images": [
+        {
+          "src": "/images/quantum.png",
+          "alt": "A Quantum Algorithm for ECDLP"
+        }
+      ],
+      "links": [
+        {
+          "href": "/documents/the_impact_on_quantum_computing_on_cryptocurrencies_2025.pdf",
+          "label": "Report: Quantum Computing & Cryptocurrencies"
+        }
+      ],
+      "body": [
+        "During the coursework project of *Quantum Information and Computation*, we surveyed the impact of quantum computing on cryptocurrencies, Bitcoin in particular.",
+        "In this study, we explained how the ECDSA algorithm works in the Bitcoin blockchain, and derived its possible attack methods using mathematical proofs. Our exploration on attack methods include the traditional Pollard's Rho Algorithm that uses Floyd's Cycle Finding Algorithm to efficiently guess the private key, and also the quantum ECDLP solver similar to the Shor Algorithm for factorization. Moreover, we further explored the post-quantum security algorithms that can be used to replace ECDSA in the future, including hash-based signatures, lattice-based signatures, and multivariate polynomial signatures."
+      ]
+    },
+    {
+      "id": "mos2",
+      "title": "Separation and Transfer of Monolayer Molybdenum Disulfide",
+      "supporting": [
+        "National Synchrotron Radiation Research Center, Spring, 2021",
+        "Advisor: Prof. Chia-Hao Chen, NSRRC"
+      ],
+      "images": [
+        {
+          "src": "/images/mos23.png",
+          "alt": "MoS2 Under Raman Spectroscopy"
+        },
+        {
+          "src": "/images/mos22.png",
+          "alt": "MoS2 Under Microscope"
+        }
+      ],
+      "links": [
+        {
+          "href": "/documents/mos2_project.pdf",
+          "label": "Report: MoS2 Project (Chinese)"
+        }
+      ],
+      "body": [
+        "My research in high school is on the separation and transfer of monolayer Molybdenum Disulfide (MoS₂) using decane-dithiol and gold-plated silicon substrate, measured under a Raman spectroscopy microscope. MoS₂ exists as a bulk, or multilayer structure; however, similar to graphene, when a monolayer is separated from the bulk, it exhibits completely different properties. For example, a monolayer MoS₂ is a direct band gap semiconductor used in lasers, LEDs, and photoelectric diodes. However, producing MoS₂ with a thickness of several Angstroms isn’t an easy task. By conventional methods, it requires one week of soaking the MoS₂ in thiol solution, heating the MoS₂ to 773K for hours, and another week to transfer the monolayer MoS₂ onto another silicon substrate. Our research experiments on various parameters that affect the separation and transfer procedures, including exposure to UV light, ultrasonic agitation, heating, and timing.",
+        "In experiments involving the cleavage of long carbon chains, we concluded that both heating and UV irradiation provide sufficient energy for the cleavage of dithiol long carbon chains. Subsequently, ultrasonic agitation facilitates the detachment of MoS₂ from the gold surface, allowing it to transfer onto silicon substrates coated with silicon dioxide. This transfer technique demonstrates broad applicability, enabling the deposition of MoS₂ onto various substrates, not limited to silicon dioxide-coated silicon substrates."
+      ]
+    }
+  ]
+}
