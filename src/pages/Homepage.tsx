@@ -19,14 +19,31 @@ const Homepage = () => {
             }}/>
           </div>
           <div className='text-2xl font-bold mb-4 text-center md:text-left'>{profile.name}</div>
-          <div className='font-semibold mb-2 text-center md:text-left'>{profile.affiliation}</div>
-          {profile.programs.map((program) => (
-            <div key={program.title} className='mb-2 text-center md:text-left'>
-              <span className='font-semibold'>{program.title}</span><br />
-              <span className='text-blue-200'>{program.dates}</span>
-            </div>
-          ))}
-          <div className='text-cyan-100 mb-2 flex flex-row justify-center md:justify-start flex-wrap'>
+          <div className='mt-2 space-y-6 text-left'>
+            {profile.affiliations.map((affiliation) => (
+              <div key={affiliation.name} className='relative'>
+                <div className='flex items-start gap-2 justify-start'>
+                  <div className='font-semibold'>{affiliation.name}</div>
+                </div>
+                <div className='mt-3 ml-[4px]'>
+                  <div className='space-y-2 pl-2'>
+                    {affiliation.programs.map((program) => (
+                      <div key={`${affiliation.name}-${program.title}`} className='relative'>
+                        <div className='rounded-md border border-blue-900/60 bg-blue-950/40 px-3 py-2'>
+                          <div className='text-sm font-semibold text-blue-100'>{program.title}</div>
+                          {program.subtitle && (
+                            <div className='text-xs text-blue-200'>{program.subtitle}</div>
+                          )}
+                          <div className='text-xs text-blue-200'>{program.dates}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className='text-blue-200 mt-2 flex flex-row justify-center md:justify-start flex-wrap'>
             {profile.tags.map((tag) => (
               <div key={tag.to} className="mr-2"><Link to={tag.to}>{tag.label}</Link></div>
             ))}

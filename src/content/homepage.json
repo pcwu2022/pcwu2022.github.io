@@ -5,15 +5,36 @@
       "src": "/images/cep.jpg",
       "alt": "My Photo"
     },
-    "affiliation": "National Taiwan University (NTU)",
-    "programs": [
+    "affiliations": [
       {
-        "title": "Electrical Engineering",
-        "dates": "2022 — (2026)"
+        "name": "Carnegie Mellon University (CMU)",
+        "programs": [
+          {
+            "title": "Electrical and Computer Engineering",
+            "subtitle": "Master's Degree",
+            "dates": "2026 — (2028)"
+          },
+          {
+            "title": "Engineering, Technology and Innovation Management",
+            "subtitle": "Dual Degree Program",
+            "dates": "2026 — (2028)"
+          }
+        ]
       },
       {
-        "title": "Creative and Entrepreneurial Program",
-        "dates": "2024 — 2025"
+        "name": "National Taiwan University (NTU)",
+        "programs": [
+          {
+            "title": "Electrical Engineering",
+            "subtitle": "Bachelor's Degree",
+            "dates": "2022 — 2026"
+          },
+          {
+            "title": "Creative and Entrepreneurial Program",
+            "subtitle": "Specialized Program",
+            "dates": "2024 — 2025"
+          }
+        ]
       }
     ],
     "tags": [
@@ -49,13 +70,13 @@
       {
         "id": "introduction",
         "body": [
-          "I'm Po-Chun, a senior undergraduate at National Taiwan University, majoring in electrical engineering. Previously, I have done research on [[/research#analog|analog and mixed-signal IC design]] and [[/research#formal|solving graph problems using formal verification methods]]. Still, my interests include computer architecture, algorithms, bioengineering, and programming in general."
+          "I'm Po-Chun, an incoming master's student at Carnegie Mellon University, majoring in Electrical and Computer Engineering. My interests include algorithms, consumer-facing applications, computer architecture, electronic design automation, and programming in general. In my undergraduate studies, I have done research on [[/research#formal|solving graph problems using formal verification methods]] and [[/research#analog|analog and mixed-signal IC design]]."
         ]
       },
       {
         "id": "entrepreneur",
         "body": [
-          "**I'm an Entrepreneur.** I see opportunities, enlighten others with my vision, and execute them passionately. I founded the [[/startupleadership/#ntuloc|NTU Learning Optimization Club]] in my sophomore year, and the Chinese Chess Association in high school. I initiated a one-year-long project to create [[/my_projects/#vmks|an online replica of the NTUEE Makerspace]]. I also founded [[/my_projects/#ntupair|NTU Pair]] and [[/my_projects/#synality|Synality]], two networking app startups, and served as a team leader in the creative and entrepreneurial program."
+          "**I'm an Entrepreneur.** I see opportunities, enlighten others with my vision, and execute them passionately. I founded the [[/startupleadership/#ntuloc|NTU Learning Optimization Club]] in my sophomore year, and the Chinese Chess Association in high school. I initiated a one-year-long project to create [[/my_projects/#vmks|an online replica of the NTUEE Makerspace]]. I also founded [[/my_projects/#ntupair|NTU Pair]] and [[/my_projects/#synality|Synality]], two networking app startups, and served as a team leader in the [[/startupleadership/#ntucep|creative and entrepreneurial program]]."
         ]
       },
       {
@@ -67,7 +88,7 @@
       {
         "id": "maker",
         "body": [
-          "**I'm a Maker.** I see problems, use my knowledge as a toolbox, and solve them. For hardware, I designed and built a programmable [[/my_projects#lightbike|glowing bike]], the props for the [[/my_projects#lightdance|NTUEE Light Dance]], and an [[/my_projects#makentu2024|AR device]] for motorists to navigate around the city, for which we won the best maker award in the annual MakeNTU competition. For software, I created a random restaurant selector for NTU students, some [[/projects|JavaScript solitaire games]], and an [[/my_projects#sleksystem|online hospital simulation system]] for SLEK, a medical student organization."
+          "**I'm a Maker.** I see problems, use my knowledge as a toolbox, and solve them. For hardware, I designed and built a programmable [[/my_projects#lightbike|glowing bike]], the props for the [[/my_projects#lightdance|NTUEE Light Dance]], and an [[/my_projects#makentu2024|AR device]] for motorists to navigate around the city, for which we won the best maker award in the annual MakeNTU competition. For software, I created a [[/my_projects#ntufood|random restaurant selector]] for NTU students, some [[/projects|JavaScript solitaire games]], and an [[/my_projects#sleksystem|online hospital simulation system]] for SLEK, a medical student organization."
         ]
       }
     ]
