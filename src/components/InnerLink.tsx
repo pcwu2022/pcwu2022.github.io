@@ -2,11 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const InnerLink = (props: {
-    to: string,
+  to: string,
   children: React.ReactNode
 }) => {
   return (
-    <span className='text-blue-100 hover:underline'>
+    <span className='text-blue-400 hover:text-blue-300 font-semibold hover:underline transition-colors duration-150'>
       <Link to={props.to}>{props.children}</Link>
     </span>
   )

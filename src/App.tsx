@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Homepage from './pages/Homepage';
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
@@ -7,6 +6,7 @@ import Research from './pages/Research';
 import MyProjects from './pages/MyProjects';
 import StartupLeadership from './pages/StartupLeadership';
 import WebProjects from './pages/WebProjects';
+import MarkdownFeed from './pages/MarkdownFeed';
 
 function App() {
   // Helper component to scroll to anchor IDs included after the hash
@@ -87,7 +87,7 @@ function App() {
   }
 
   return (
-    <div className="m-0 p-0 min-h-screen font-sans-serif bg-stone-950 text-white">
+    <div className="m-0 p-0 min-h-screen font-sans bg-transparent text-gray-100">
       <HashRouter>
         <ScrollToHash />
         <Routes>
@@ -96,6 +96,8 @@ function App() {
           <Route path='/my_projects' element={<MyProjects />}></Route>
           <Route path='/startupleadership' element={<StartupLeadership />}></Route>
           <Route path='/projects' element={<WebProjects />}></Route>
+          <Route path='/markdown' element={<MarkdownFeed />}></Route>
+          <Route path='/markdown/raw' element={<MarkdownFeed />}></Route>
         </Routes>
       </HashRouter>
       
