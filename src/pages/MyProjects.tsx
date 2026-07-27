@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Links from '../components/Links'
-import DisplaySection from '../components/DisplaySection'
+import DisplaySection, { validateContent } from '../components/DisplaySection'
 import projectsContent from '../content/myProjects.json'
 
 const MyProjects = () => {
@@ -27,7 +27,7 @@ const MyProjects = () => {
           </h2>
           <div className="space-y-6">
             {projectsContent.items.map((item) => (
-              <DisplaySection key={item.id} item={item} />
+              <DisplaySection key={item.id} item={validateContent(item)} />
             ))}
           </div>
         </div>

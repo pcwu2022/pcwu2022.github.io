@@ -1,6 +1,6 @@
 import React from 'react'
 import Links from '../components/Links'
-import DisplaySection from '../components/DisplaySection'
+import DisplaySection, { validateContent } from '../components/DisplaySection'
 import researchContent from '../content/research.json'
 
 const Research = () => {
@@ -14,7 +14,7 @@ const Research = () => {
           </h2>
           <div className="space-y-6">
             {researchContent.items.map((item) => (
-              <DisplaySection key={item.id} item={item} />
+              <DisplaySection key={item.id} item={validateContent(item)} />
             ))}
           </div>
         </div>

@@ -1,9 +1,9 @@
 import React from 'react'
 import Links from '../components/Links'
-import DisplaySection from '../components/DisplaySection'
+import DisplaySection, { validateContent } from '../components/DisplaySection'
 import lifeContent from '../content/life.json'
 
-const Life  = () => {
+const Life = () => {
   return (
     <div className='m-0 p-0 h-max'>
       <Links />
@@ -11,7 +11,7 @@ const Life  = () => {
         <div className='p-6 md:p-8'>
           <div className='text-2xl font-bold mb-4'>{lifeContent.title}</div>
           {lifeContent.items.map((item) => (
-            <DisplaySection key={item.id} item={item} />
+            <DisplaySection key={item.id} item={validateContent(item)} />
           ))}
         </div>
       </div>

@@ -1,9 +1,9 @@
 import React from 'react'
 import Links from '../components/Links'
-import DisplaySection from '../components/DisplaySection'
+import DisplaySection, { validateContent } from '../components/DisplaySection'
 import leadershipContent from '../content/startupLeadership.json'
 
-const StartupLeadership  = () => {
+const StartupLeadership = () => {
   return (
     <div className='m-0 p-0 min-h-screen bg-transparent'>
       <Links />
@@ -14,7 +14,7 @@ const StartupLeadership  = () => {
           </h2>
           <div className="space-y-6">
             {leadershipContent.items.map((item) => (
-              <DisplaySection key={item.id} item={item} />
+              <DisplaySection key={item.id} item={validateContent(item)} />
             ))}
           </div>
         </div>
