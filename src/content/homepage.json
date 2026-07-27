@@ -76,13 +76,13 @@
       {
         "id": "maker",
         "body": [
-          "**I'm a Maker.** I see problems, use my knowledge as a toolbox, and solve them. For software, I created a [[/my_projects#ntufood|random restaurant selector]] for NTU students, an [[/my_projects#sleksystem|online hospital simulation system]] for SLEK, a medical student organization, and some [[/projects|JavaScript solitaire games]]. For hardware, I designed and built a programmable [[/my_projects#lightbike|glowing bike]], the props for the [[/my_projects#lightdance|NTUEE Light Dance]], and an [[/my_projects#makentu2024|AR device]] for motorists to navigate around the city, for which we won the best maker award in the annual MakeNTU competition."
+          "**I'm a Maker.** I see problems, use my knowledge as a toolbox, and solve them. For software, I created a [[/my_projects#whiskers|compiler and IDE]] for programming in a Scratch-based syntax, a [[/my_projects#ntufood|random restaurant selector]] for NTU students, an [[/my_projects#sleksystem|online hospital simulation system]] for a medical student organization, and some [[/projects|original web applications]]. For hardware, I designed and built a programmable [[/my_projects#lightbike|glowing bike]], the props for the [[/my_projects#lightdance|NTUEE Light Dance]], and an [[/my_projects#makentu2024|AR device]] for motorists to navigate around the city, for which we won the best maker award in the annual MakeNTU competition."
         ]
       },
       {
         "id": "entrepreneur",
         "body": [
-          "**I'm an Entrepreneur.** I see opportunities, enlighten others with my vision, and execute them passionately. I founded the [[/startupleadership/#ntuloc|NTU Learning Optimization Club]] in my sophomore year, and the Chinese Chess Association in high school. I initiated a one-year-long project to create [[/my_projects/#vmks|an online replica of the NTUEE Makerspace]]. I also founded [[/my_projects/#ntupair|NTU Pair]] and [[/my_projects/#synality|Synality]], two networking app startups, and served as a team leader in the [[/startupleadership/#ntucep|creative and entrepreneurial program]]."
+          "**I'm an Entrepreneur.** I see opportunities, enlighten others with my vision, and execute them passionately. I founded the [[/startupleadership/#ntuloc|NTU Learning Optimization Club]] in my sophomore year, and the Chinese Chess Association in high school. I initiated a one-year-long project to create [[/my_projects/#vmks|an online replica of the NTUEE Makerspace]]. I also founded [[/my_projects/#ntupair|NTU Pair]] and [[/my_projects/#synality|Synality]], two networking app startups, and served as a team leader in the [[/startupleadership/#ntucep|NTU Creative and Entrepreneurial Program]]."
         ]
       },
       {
@@ -96,9 +96,14 @@
   "highlightsTitle": "Highlights",
   "highlights": [
     {
-      "title": "NTU Pair",
+      "title": "Matchmaking App",
       "image": "/images/ntupair1.png",
       "link": "/my_projects/#ntupair"
+    },
+    {
+      "title": "Whiskers IDE",
+      "image": "/images/whiskers.png",
+      "link": "/my_projects/#whiskers"
     },
     {
       "title": "Virtual Makerspace",
@@ -106,24 +111,29 @@
       "link": "/my_projects/#vmks"
     },
     {
-      "title": "Formal Verification",
-      "image": "/images/formal.png",
-      "link": "/research/#formal"
+      "title": "Urban Radius Simulator",
+      "image": "/images/urban_radius_2.png",
+      "link": "/my_projects/#urban_radius"
     },
     {
-      "title": "SAR ADC and PLL Design",
-      "image": "/images/adc1.png",
-      "link": "/research/#analog"
-    },
-    {
-      "title": "NTULOC",
+      "title": "Club Founding",
       "image": "/images/ntuloc1.jpg",
       "link": "/startupleadership/#ntuloc"
     },
     {
-      "title": "NTUCEP",
+      "title": "Entrepreneurship",
       "image": "/images/ntucep_1.png",
       "link": "/startupleadership/#ntucep"
+    },
+    {
+      "title": "FV Research",
+      "image": "/images/formal.png",
+      "link": "/research/#formal"
+    },
+    {
+      "title": "Analog Research",
+      "image": "/images/adc1.png",
+      "link": "/research/#analog"
     },
     {
       "title": "Quantum vs Cryptocurrency",
