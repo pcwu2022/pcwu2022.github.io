@@ -45,6 +45,45 @@
       }
     },
     {
+      "id": "whiskers",
+      "title": "Whiskers IDE",
+      "supporting": [
+        "A web based IDE for writing Scratch-like code.",
+        "February 2026"
+      ],
+      "images": [
+        {
+          "src": "/images/whiskers.png",
+          "alt": "The Whiskers IDE"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://scratch-compiler.vercel.app",
+          "label": "Whiskers IDE Live Web App"
+        }
+      ],
+      "body": [
+        "Learning to code wasn't easy for me. I spent years mastering Scratch, yet struggled when transitioning to JavaScript because of complex syntax. I created Whiskers to ensure the next generation doesn't have to face that same brick wall.",
+        "Whiskers is the ultimate stepping stone for young learners transitioning from block-based coding to text-based programming. While drag-and-drop platforms like Scratch teach brilliant logical thinking, switching to traditional languages like JavaScript can feel overwhelming. Whiskers bridges this gap by using familiar Scratch concepts expressed through a simple, text-based syntax that seamlessly aligns with JavaScript logic.",
+        "With a full-featured Monaco Editor (drop-in blocks, autocomplete, and syntax highlighting), multi-sprite support, and instant browser preview, kids can naturally evolve from dragging code blocks to writing real, professional code with confidence."
+      ],
+      "tags": {
+        "domain": "software",
+        "tech_stack": [
+          "React"
+        ],
+        "origin": "personal",
+        "leadership": "solo",
+        "team_size": 1,
+        "ai_usage": "core",
+        "status": "live",
+        "award_winning": false,
+        "start_month": "2026-02",
+        "end_month": "2026-02"
+      }
+    },
+    {
       "id": "vmks",
       "title": "Virtual Makerspace",
       "supporting": [

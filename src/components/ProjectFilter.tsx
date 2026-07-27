@@ -62,23 +62,23 @@ const ORIGIN_OPTIONS: ChipOption<ProjectOrigin>[] = [
   { value: 'competition', label: 'Competition' },
   { value: 'academic', label: 'Academic' },
   { value: 'personal', label: 'Personal' },
-  { value: 'student_org', label: 'Student Organization' },
+  { value: 'student_org', label: 'Student Org' },
 ]
 
 const LEADERSHIP_OPTIONS: ChipOption<LeadershipRole>[] = [
-  { value: 'lead', label: 'Leader' },
+  { value: 'lead', label: 'Lead' },
   { value: 'solo', label: 'Solo' },
 ]
 
 const AI_USAGE_OPTIONS: ChipOption<AIUsage>[] = [
-  { value: 'core', label: 'Vibe Coded' },
+  { value: 'core', label: 'AI Core' },
   { value: 'assisted', label: 'AI Assisted' },
   { value: 'none', label: 'No AI' },
 ]
 
 const STATUS_OPTIONS: ChipOption<ProjectStatus>[] = [
   { value: 'live', label: 'Live' },
-  { value: 'github', label: 'GitHub Repo' },
+  { value: 'github', label: 'GitHub' },
   { value: 'demo_video', label: 'Demo Video' },
 ]
 
@@ -268,7 +268,7 @@ export default function ProjectFilter({ filters, onChange, totalCount, filteredC
               <ChipGroup options={AI_USAGE_OPTIONS} selected={filters.ai_usage} onToggle={(v) => toggle('ai_usage', v)} onClear={() => clearGroup('ai_usage')} />
             </FilterGroup>
 
-            <FilterGroup label="Demo">
+            <FilterGroup label="Status">
               <ChipGroup options={STATUS_OPTIONS} selected={filters.status} onToggle={(v) => toggle('status', v)} onClear={() => clearGroup('status')} />
             </FilterGroup>
 
@@ -327,6 +327,7 @@ export function applyFilters(items: DisplayContent[], filters: FilterState): Dis
     if (filters.leadership.size > 0 && !filters.leadership.has(tags.leadership)) return false
     if (filters.ai_usage.size > 0 && !filters.ai_usage.has(tags.ai_usage)) return false
     if (filters.status.size > 0 && !filters.status.has(tags.status)) return false
+
     if (filters.award_winning.size > 0 && !tags.award_winning) return false
 
     return true
