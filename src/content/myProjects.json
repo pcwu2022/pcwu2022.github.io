@@ -38,7 +38,7 @@
         "leadership": "solo",
         "team_size": 1,
         "ai_usage": "none",
-        "status": "archived",
+        "status": "github",
         "award_winning": false,
         "start_month": "2022-12",
         "end_month": "2023-02"
@@ -48,7 +48,7 @@
       "id": "whiskers",
       "title": "Whiskers IDE",
       "supporting": [
-        "A web based IDE for writing Scratch-like code.",
+        "A Web-Based IDE for Writing Scratch-Like Code.",
         "February 2026"
       ],
       "images": [
@@ -125,6 +125,50 @@
         "award_winning": false,
         "start_month": "2023-05",
         "end_month": "2023-08"
+      }
+    },
+    {
+      "id": "urban_radius",
+      "title": "Urban Radius",
+      "supporting": [
+        "A Simulation of an Algorithm to Define a City's Borders.",
+        "June 2026"
+      ],
+      "images": [
+        {
+          "src": "/images/urban_radius_1.png",
+          "alt": "The Origin of R"
+        },
+        {
+          "src": "/images/urban_radius_2.png",
+          "alt": "The User Interface"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://urban-radius.vercel.app/",
+          "label": "The Urban Radius Simulation"
+        }
+      ],
+      "body": [
+        "Can we measure a city's \"true size\" without relying on arbitrary administrative borders?",
+        "When we compare cities, we often run into the \"boundary problem.\" A city with vast, sparse suburbs can appear larger than a dense, polycentric metropolis simply because of how its administrative lines were drawn decades ago.",
+        "Inspired by Ray Delahanty's video on YouTube, \"Can We Agree On the 4 Major U.S. Cities?\", I started thinking about how we might standardize this. How do we move beyond lines on a map to capture the \"true\" functional footprint of a city?",
+        "Derived from the academic H-Index, I came up with the idea of the Urban Radius and built a prototype implementing it, along with an interactive website to experiment with different parameters and see how the calculated boundaries change. The mathematical description and the algorithm is explained in my live simulation website."
+      ],
+      "tags": {
+        "domain": "software",
+        "tech_stack": [
+          "React"
+        ],
+        "origin": "personal",
+        "leadership": "solo",
+        "team_size": 1,
+        "ai_usage": "core",
+        "status": "live",
+        "award_winning": false,
+        "start_month": "2026-06",
+        "end_month": "2026-06"
       }
     },
     {
@@ -287,6 +331,52 @@
         "award_winning": true,
         "start_month": "2023-08",
         "end_month": "2025-02"
+      }
+    },
+    {
+      "id": "acquired_universe",
+      "title": "Acquired Universe",
+      "supporting": [
+        "A Space-Time Display of Companies Covered on the Acquired Podcast",
+        "March 2026"
+      ],
+      "images": [
+        {
+          "src": "/images/acquired_universe_1.png",
+          "alt": "Time-Elapse View"
+        },
+        {
+          "src": "/images/acquired_universe_2.png",
+          "alt": "Graph View"
+        },
+        {
+          "src": "/images/acquired_universe_3.png",
+          "alt": "Timeline View"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://pcwu2022.github.io/acquired_universe/",
+          "label": "The Acquired Universe Website"
+        }
+      ],
+      "body": [
+        "I've been listening to the *Acquired Podcast* for two years, and the relationships between the companies inspired me to create this graphical interface of space, time, and connection for the listeners of the podcast.",
+        "The *Acquired Universe* includes three main views. First, the time-elapse view demonstrates the appearance of company stories in the chronological order of *Acquired* episodes. Second, the graph view displays the connections between companies, sourced from *Acquired's* episode captions. Third, the timeline view allows the user to view the major events of each company mapped on a single timeline."
+      ],
+      "tags": {
+        "domain": "software",
+        "tech_stack": [
+          "React"
+        ],
+        "origin": "personal",
+        "leadership": "solo",
+        "team_size": 1,
+        "ai_usage": "core",
+        "status": "live",
+        "award_winning": false,
+        "start_month": "2026-03",
+        "end_month": "2026-03"
       }
     },
     {
