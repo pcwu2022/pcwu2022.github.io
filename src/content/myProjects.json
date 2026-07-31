@@ -48,7 +48,7 @@
       "id": "whiskers",
       "title": "Whiskers IDE",
       "supporting": [
-        "A Web-Based IDE for Writing Scratch-Like Code.",
+        "A Web-Based IDE for Writing Scratch-Like Code",
         "February 2026"
       ],
       "images": [
@@ -81,6 +81,46 @@
         "award_winning": false,
         "start_month": "2026-02",
         "end_month": "2026-02"
+      }
+    },
+    {
+      "id": "lifeos",
+      "title": "LifeOS Automation System",
+      "supporting": [
+        "Synchronizes pages across Notion workspaces",
+        "January 2025 — March 2025"
+      ],
+      "images": [
+        {
+          "src": "/images/lifeos.png",
+          "alt": "LifeOS System Architecture"
+        }
+      ],
+      "links": [
+        {
+          "href": "LifeOS Github",
+          "label": "https://github.com/cubee-chen/pinecraft-notion-auto"
+        }
+      ],
+      "body": [
+        "LifeOS Automation System is a Python service designed to bridge a team's Notion workspace with a MongoDB database, allowing project groups to manage their workflows entirely inside Notion while a robust backend engine handles consistency, conflict resolution, and planning algorithms behind the scenes. Built with a 7-person team, the system solves the fundamental challenges of using human-centric tools for automated operations, such as concurrent edits, missing built-in versioning, and complex multi-page schedule mirroring.",
+        "As the designer and implementer of the core synchronization algorithm, I engineered a version-state model that tracks pages across four distinct states: UP_TO_DATE, AHEAD, BEHIND, and NOT_TRACKED. By comparing Notion's last-edited timestamps against persisted database versions to eliminate ad-hoc diffing. To handle complex project topologies where a single schedule must map to multiple individual user pages, I developed a canonical document mapping architecture with fan-out linking and automated collaborator diffing. Combined with an asynchronous convergent sync loop that handles bounded re-sweeps, the system now reliably synchronizes live team workspaces, automatically provisions new collaborators, and recovers from out-of-order updates without manual copy-pasting."
+      ],
+      "tags": {
+        "domain": "software",
+        "tech_stack": [
+          "Python",
+          "Notion API",
+          "MongoDB"
+        ],
+        "origin": "startup",
+        "leadership": "member",
+        "team_size": 7,
+        "ai_usage": "assisted",
+        "status": "github",
+        "award_winning": false,
+        "start_month": "2025-01",
+        "end_month": "2025-03"
       }
     },
     {
