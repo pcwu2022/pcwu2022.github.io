@@ -16,22 +16,27 @@ function App() {
     const scrollToAnchor = () => {
       const rawHash = window.location.hash || '' // leading '#'
       // Try to find the anchor in multiple places:
-      // 1. ?section=... in window.location.search (normal query)
-      // 2. ?section=... inside the hash (e.g. '#/page?section=id')
+      // 1. ?id=... or ?section=... in window.location.search (normal query)
+      // 2. ?id=... or ?section=... inside the hash (e.g. '#/page?id=id')
       // 3. fragment after an additional '#' inside the hash (existing behavior)
       let anchor = ''
+      let anchorSource: 'search' | 'hash-query' | 'hash-fragment' | '' = ''
 
       // 1. check real search params first
       try {
         const searchParams = new URLSearchParams(window.location.search)
-        if (searchParams.has('section')) {
+        if (searchParams.has('id')) {
+          anchor = searchParams.get('id') || ''
+          anchorSource = 'search'
+        } else if (searchParams.has('section')) {
           anchor = searchParams.get('section') || ''
+          anchorSource = 'search'
         }
       } catch (e) {
         // ignore
       }
 
-      // If not found, inspect the hash string (without leading '#') for '?section=' or a secondary '#'
+      // If not found, inspect the hash string (without leading '#') for '?id=', '?section=', or a secondary '#'
       if (!anchor && rawHash) {
         const withoutHash = rawHash.slice(1) // remove leading '#'
         // If hash contains a '?', parse its query portion
@@ -41,7 +46,13 @@ function App() {
           const qp = queryPartAndMaybeHash.split('#')[0]
           try {
             const params = new URLSearchParams(qp)
-            if (params.has('section')) anchor = params.get('section') || ''
+            if (params.has('id')) {
+              anchor = params.get('id') || ''
+              anchorSource = 'hash-query'
+            } else if (params.has('section')) {
+              anchor = params.get('section') || ''
+              anchorSource = 'hash-query'
+            }
           } catch (e) {
             // ignore
           }
@@ -51,10 +62,30 @@ function App() {
         if (!anchor) {
           const parts = withoutHash.split('#')
           anchor = parts.length > 1 ? parts.slice(1).join('#') : ''
+          anchorSource = anchor ? 'hash-fragment' : ''
         }
       }
 
       if (anchor) {
+        if (anchorSource === 'search') {
+          const url = new URL(window.location.href)
+          url.searchParams.delete('id')
+          url.searchParams.delete('section')
+          url.hash = url.hash ? `${url.hash}#${anchor}` : `#${anchor}`
+          window.history.replaceState(null, '', url.toString())
+        } else if (anchorSource === 'hash-query') {
+          const withoutHash = rawHash.slice(1)
+          const qIndex = withoutHash.indexOf('?')
+          const routePart = qIndex === -1 ? withoutHash : withoutHash.slice(0, qIndex)
+          const qp = qIndex === -1 ? '' : withoutHash.slice(qIndex + 1).split('#')[0]
+          const params = new URLSearchParams(qp)
+          params.delete('id')
+          params.delete('section')
+          const normalizedQuery = params.toString()
+          const normalizedHash = `${routePart}${normalizedQuery ? `?${normalizedQuery}` : ''}#${anchor}`
+          window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#${normalizedHash}`)
+        }
+
         // small delay to allow routed content to render
         setTimeout(() => {
           const el = document.getElementById(anchor)
