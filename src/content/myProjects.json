@@ -5,7 +5,7 @@
       "id": "ntupair",
       "title": "NTU Pair",
       "supporting": [
-        "A Self-designed Matchmaking Platform",
+        "A Self-designed Dating App",
         "December 2022 — February 2023"
       ],
       "images": [
@@ -25,7 +25,7 @@
         }
       ],
       "body": [
-        "NTU Pair is an innovative matchmaking platform I developed to foster meaningful connections among NTU students. Instead of relying on traditional swipe mechanisms, the platform utilizes psychological assessments to evaluate interpersonal compatibility. By leveraging custom matching algorithms, the system pairs users with compatible profiles to encourage deeper, more meaningful interactions.",
+        "NTU Pair is an innovative dating app I developed to foster meaningful connections among NTU students. Instead of relying on traditional swipe mechanisms, the platform utilizes psychological assessments to evaluate interpersonal compatibility. By leveraging custom matching algorithms, the system pairs users with compatible profiles to encourage deeper, more meaningful interactions.",
         "Following its launch, the web application quickly attracted over 1,600 verified student users. However, encountering early security challenges including cross-site scripting (XSS), denial of service (DoS) attempts, and credential stuffing, it spurred me to deepen my expertise in cybersecurity and re-architect the system using secure coding standards. This hands-on experience in rapid incident response and defensive engineering directly informs how I build more resilient full-stack applications today."
       ],
       "tags": {
