@@ -168,6 +168,125 @@
       }
     },
     {
+      "id": "obamify",
+      "title": "Obamify",
+      "supporting": [
+        "Course Project: Digital IC Lab",
+        "November 2025 — December 2025"
+      ],
+      "images": [
+        {
+          "src": "/images/obamify_1.png",
+          "alt": "Our Team in the IC Lab"
+        },
+        {
+          "src": "/images/obamify_2.png",
+          "alt": "System Diagram"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://github.com/pcwu2022/obamify",
+          "label": "Github"
+        }
+      ],
+      "body": [
+        "Obamify is an image transformation algorithm implemented using SystemVerilog and an FPGA, inspired by a project from Spu7Nix (GitHub). Given a captured source image and five candidate target images, it first finds the most similar target using a loss function. It then applies the following process iteratively: swap two random pixels in the source image if that action reduces the difference between the source and the selected target.",
+        "My role in this project was to design the algorithm and implement the SystemVerilog code for the image processing pipeline. In order to test various algorithmic approaches, I implemented a Python-based architectural reference model to simulate the algorithm and verify the correctness of the SystemVerilog implementation. This model used bitwise operations, cycle-accurate simulation, and memory constraints to serve as a bridge between the high-level algorithm and the low-level hardware implementation. Using hardware concurrency and dedicated memory interfaces, the algorithm can perform the image-processing pipeline much more efficiently than a software-only implementation."
+      ],
+      "tags": {
+        "domain": "hardware",
+        "tech_stack": [
+          "SystemVerilog",
+          "FPGA",
+          "Quartus",
+          "Python"
+        ],
+        "origin": "academic",
+        "leadership": "member",
+        "team_size": 3,
+        "ai_usage": "assisted",
+        "status": "github",
+        "award_winning": false,
+        "start_month": "2025-11",
+        "end_month": "2025-12"
+      }
+    },
+    {
+      "id": "ieda",
+      "title": "Reverse Engineering",
+      "supporting": [
+        "Course Project: Introduction to EDA",
+        "November 2025 — December 2025"
+      ],
+      "images": [
+        {
+          "src": "/images/ieda_1.png",
+          "alt": "BDD Result"
+        },
+        {
+          "src": "/images/ieda_2.png",
+          "alt": "GNN Architecture"
+        },
+        {
+          "src": "/images/ieda_3.png",
+          "alt": "GNN Training Result"
+        }
+      ],
+      "links": [],
+      "body": [
+        "The project for the IEDA course is a Python-based tool designed to reverse-engineer gate-level circuits back into arithmetic Register-Transfer Level (RTL) code, referenced from the 2022 ICCAD contest. To tackle this complex task, the tool explores and compares multiple diverse methodologies—ranging from traditional formal verification techniques like Binary Decision Diagrams (BDD), Binary Moment Diagrams (*BMD), circuit partitioning, and partial derivatives, to modern machine learning and artificial intelligence approaches utilizing Graph Neural Networks and prompted Large Language Models paired with automated equivalence checking.",
+        "My role in this project was the BDD, BMD, GNN and LLM implementation, as well as the overall system designer. I implemented the BDD and BMD algorithms to perform symbolic analysis of the circuit. However, they suffer from exponential state explosion, making them unfeasible for multipliers or larger adders. Additionally, I trained a Graph Neural Network model to learn structural patterns in the circuit graph, which improved the tool's ability to predict RTL structures from gate-level representations, but struggled to partition and recognize complex compound expressions without proper circuit segmentation. Finally, I integrated a Large Language Model with prompt engineering techniques to generate candidate RTL code snippets based on the extracted features and patterns from the circuit."
+      ],
+      "tags": {
+        "domain": "software",
+        "tech_stack": [
+          "Python",
+          "Verilog"
+        ],
+        "origin": "academic",
+        "leadership": "member",
+        "team_size": 3,
+        "ai_usage": "assisted",
+        "status": "github",
+        "award_winning": false,
+        "start_month": "2025-11",
+        "end_month": "2025-12"
+      }
+    },
+    {
+      "id": "cpu",
+      "title": "CPU Design",
+      "supporting": [
+        "Course Project: Computer Architecture",
+        "April 2023 — July 2023"
+      ],
+      "images": [
+        {
+          "src": "/images/cpu.png",
+          "alt": "CPU Architecture"
+        }
+      ],
+      "links": [],
+      "body": [
+        "This project implements a comprehensive 32-bit RISC-V processor capable of executing standard RV32I instructions alongside multi-cycle multiplication/division units and a custom-designed 32-block direct-mapped cache. The design integrates custom control logic and a unified ALU datapath to efficiently handle complex operations like jal, jalr, and auipc, while utilizing robust stall mechanisms to manage multi-cycle execution delays and memory latencies. Through the incorporation of a write-through cache architecture, the system achieved a 50% speedup across various instruction workloads, ranking it in the top 15% of the class."
+      ],
+      "tags": {
+        "domain": "hardware",
+        "tech_stack": [
+          "Verilog"
+        ],
+        "origin": "academic",
+        "leadership": "member",
+        "team_size": 2,
+        "ai_usage": "none",
+        "status": "github",
+        "award_winning": false,
+        "start_month": "2023-04",
+        "end_month": "2023-07"
+      }
+    },
+    {
       "id": "urban_radius",
       "title": "Urban Radius",
       "supporting": [

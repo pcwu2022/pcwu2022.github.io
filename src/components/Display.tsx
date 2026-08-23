@@ -16,12 +16,14 @@ const Display = (props: {
   supporting?: string[]
   images?: DisplayImage[]
   links?: DisplayLink[]
+  techStack?: string[]
   children?: React.ReactNode
 }) => {
   const [preview, setPreview] = useState<{ src: string; alt: string } | null>(null)
   const supporting = props.supporting ?? []
   const images = props.images ?? []
   const links = props.links ?? []
+  const techStack = props.techStack ?? []
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -82,6 +84,21 @@ const Display = (props: {
                   <span className="truncate max-w-[16rem]">{el.label}</span>
                 </a>
               ))}
+            </div>
+          )}
+
+          {techStack.length > 0 && (
+            <div className={`${links.length > 0 ? 'mt-4' : 'mt-6'}`}>
+              <div className="flex flex-wrap justify-center md:justify-start gap-2">
+                {techStack.map((tech, index) => (
+                  <span
+                    key={`${tech}-${index}`}
+                    className="inline-flex items-center px-2.5 py-1 text-[11px] md:text-xs font-semibold tracking-wide uppercase text-cyan-200 bg-cyan-950/30 border border-cyan-700/45 rounded-md"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
           )}
         </div>

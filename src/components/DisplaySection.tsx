@@ -196,6 +196,7 @@ const DisplaySection = ({ item }: { item: DisplayContent }) => {
       supporting={item.supporting ?? []}
       images={item.images ?? []}
       links={item.links ?? []}
+      techStack={item.tags?.tech_stack ?? []}
     >
       <RichText paragraphs={item.body ?? []} />
     </Display>
